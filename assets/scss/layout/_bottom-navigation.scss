@@ -1,0 +1,10 @@
+.bottom-navigation {
+  border-top: 1px solid $gray-100;
+  position: relative;
+  .bottom-navigation-plus {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

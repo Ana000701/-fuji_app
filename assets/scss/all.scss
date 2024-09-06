@@ -16,3 +16,13 @@ $utilities: map-merge(
   )
 );
 @import "../node_modules/bootstrap/scss/utilities/api";
+
+// base
+@import "./base/base";
+@import "./base/fontStyles";
+
+// layout
+@import "./layout/bottom-navigation";
+
+// pages
+@import "./pages/index";
