@@ -28,5 +28,8 @@
     border-radius: 16px;
     color: white;
     background-color: $primary-400;
+    &:focus-visible {
+      box-shadow: none;
+    }
   }
 }
