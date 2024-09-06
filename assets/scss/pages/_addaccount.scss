@@ -1,0 +1,32 @@
+.header-box-shadow {
+  max-width: 375px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 8px -2px #0000001a;
+}
+
+.text-101828 {
+  color: #101828;
+}
+
+.add-bill-btn {
+  .nav-pills {
+    border-radius: 16px;
+    background-color: $gray-200;
+  }
+  .nav-item {
+    width: 50%;
+  }
+  .nav-pills .nav-link {
+    border-radius: 16px;
+    color: $gray-400;
+    background-color: $gray-200;
+    &:focus-visible {
+      box-shadow: none;
+    }
+  }
+  .nav-pills .nav-link.active {
+    border-radius: 16px;
+    color: white;
+    background-color: $primary-400;
+  }
+}

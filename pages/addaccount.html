@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新增分帳</title>
+  </head>
+  <body>
+    <header class="header-box-shadow">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-between py-5">
+          <a href="index.html">
+            <img
+              src="../assets/images/icon-arrow-left.svg"
+              alt="icon-arrow-left"
+            />
+          </a>
+          <p class="fs-4 fw-bold lh-sm text-101828">新增記錄</p>
+          <img src="../assets/images/icon-warning.svg" alt="icon-warning" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <header class="add-bill-btn py-4">
+        <div class="container-fluid">
+          <ul class="nav nav-pills" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active py-1 w-100"
+                id="add-bill-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#add-bill"
+                type="button"
+                role="tab"
+                aria-controls="add-bill"
+                aria-selected="true"
+              >
+                新增分帳
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link py-1 w-100"
+                id="personal-bill-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#personal-bill"
+                type="button"
+                role="tab"
+                aria-controls="personal-bill"
+                aria-selected="false"
+              >
+                個人支出
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+              tabindex="0"
+            >
+              ...
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+              tabindex="0"
+            >
+              ...
+            </div>
+          </div>
+        </div>
+      </header>
+    </main>
+    <!-- vite -->
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
