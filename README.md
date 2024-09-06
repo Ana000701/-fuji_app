@@ -48,6 +48,10 @@
 `$border-radius-xxl: 2rem !default; // 32px`
 `$border-radius-pill: 50rem !default; // 80px`
 
+## 2024/9/6 修改紀錄
+
+**圖片皆放置至 assets**
+
 <!-- # 網頁切版直播班 Vite 範例 - Bootstrap 版本
 
 ## Node.js 版本
