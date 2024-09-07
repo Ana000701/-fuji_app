@@ -38,9 +38,10 @@
 #name,
 #price {
   width: 271px;
-  border: none;
   text-align: left;
+  color: $gray-800;
   background-color: white;
+  border: none;
   border-bottom: 1px solid $gray-200;
   &::placeholder {
     font-size: 16px;
@@ -48,13 +49,100 @@
     line-height: 25.6px;
     color: $gray-400;
   }
+  &:hover,
+  &:active,
   &:focus-visible {
     outline: none;
+    border-bottom: 1px solid var(--Primary-400, #ec9427);
+  }
+}
+
+// 共用 modal預設樣式與顯示位置
+.modal {
+  width: 375px;
+  height: auto;
+  top: unset;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  .modal-dialog {
+    margin: 0;
+  }
+  .modal-content {
+    height: 469px;
+    padding: 21px 16px 44px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border: none;
+  }
+  .modal-header {
+    justify-content: space-between;
+    border-bottom: none;
+    padding: 8px 0 0;
+    margin-bottom: 24px;
+    position: relative;
+    &::before {
+      width: 24px;
+      content: "";
+      display: block;
+    }
+    &::after {
+      position: absolute;
+      top: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      content: "";
+      width: 36px;
+      height: 5px;
+      border-radius: 2px;
+      background: rgba(#3c3c43, 0.3);
+    }
+    .btn-close {
+      margin: 0;
+      padding: 4px;
+      color: $gray-800;
+      background: center / 1em auto no-repeat
+        url(/assets/images/icon-cancel.svg);
+    }
+  }
+  .modal-body {
+    padding: 0;
+  }
+}
+
+#categoryModal {
+  .modal-body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .category-item {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      border: 1px solid $gray-200;
+      border-radius: 8px;
+    }
+    .category-image {
+      width: 32px;
+      height: 32px;
+      margin-bottom: 4px;
+    }
   }
 }
 
 .partner-btn {
   box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.1);
+  .partner-item {
+    border-top: 1px solid $gray-100;
+    &:last-child {
+      border-bottom: 1px solid $gray-100;
+    }
+  }
 }
 
 .repeat-payment-btn {
@@ -62,6 +150,16 @@
   background-color: white;
 }
 
+#frequency {
+  width: 207px;
+  color: $gray-800;
+  background-color: white;
+  border: 1px solid $gray-200;
+  border-radius: 8px;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+}
 #remark {
   border: 1px solid $gray-200;
   padding: 8px 12px;
