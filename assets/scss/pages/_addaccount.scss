@@ -57,62 +57,26 @@
   }
 }
 
-// 共用 modal預設樣式與顯示位置
-.modal {
-  width: 375px;
-  height: auto;
-  top: unset;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  .modal-dialog {
-    margin: 0;
+// 類別選單
+.category-btn {
+  .modal {
+    @include modal-ver1;
   }
   .modal-content {
-    height: 469px;
-    padding: 21px 16px 44px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    border: none;
+    @include modal-content-ver1;
   }
   .modal-header {
-    justify-content: space-between;
-    border-bottom: none;
-    padding: 8px 0 0;
-    margin-bottom: 24px;
-    position: relative;
+    @include modal-header-ver1;
     &::before {
-      width: 24px;
-      content: "";
-      display: block;
+      @include modal-header-ver1-before;
     }
     &::after {
-      position: absolute;
-      top: -8px;
-      left: 50%;
-      transform: translateX(-50%);
-      content: "";
-      width: 36px;
-      height: 5px;
-      border-radius: 2px;
-      background: rgba(#3c3c43, 0.3);
+      @include modal-header-ver1-after;
     }
     .btn-close {
-      margin: 0;
-      padding: 4px;
-      color: $gray-800;
-      background: center / 1em auto no-repeat
-        url(/assets/images/icon-cancel.svg);
+      @include modal-header-ver1-btn-close;
     }
   }
-  .modal-body {
-    padding: 0;
-  }
-}
-
-#categoryModal {
   .modal-body {
     display: flex;
     justify-content: space-between;
@@ -135,8 +99,27 @@
   }
 }
 
+// 選擇共同支付者
 .partner-btn {
   box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.1);
+  .modal {
+    @include modal-ver1;
+  }
+  .modal-content {
+    @include modal-content-ver1;
+  }
+  .modal-header {
+    @include modal-header-ver1;
+    &::before {
+      @include modal-header-ver1-before;
+    }
+    &::after {
+      @include modal-header-ver1-after;
+    }
+    .btn-close {
+      @include modal-header-ver1-btn-close;
+    }
+  }
   .partner-item {
     border-top: 1px solid $gray-100;
     &:last-child {
@@ -144,22 +127,65 @@
     }
   }
 }
-
-.repeat-payment-btn {
-  border: none;
-  background-color: white;
+// 重複扣款
+.repeat-payment {
+  .repeat-payment-btn {
+    border: none;
+    background-color: white;
+  }
+  #frequency,
+  #startDate,
+  #endDate {
+    width: 207px;
+    border: 1px solid $gray-200;
+    border-radius: 8px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #frequency,
+  #startDate {
+    color: $gray-800;
+    background-color: white;
+  }
+  #endDate {
+    color: $gray-400;
+    background-color: $gray-100;
+  }
+  .fill-gray-400 {
+    fill: $gray-400 !important;
+  }
 }
-
-#frequency {
-  width: 207px;
-  color: $gray-800;
-  background-color: white;
-  border: 1px solid $gray-200;
-  border-radius: 8px;
-  padding: 8px 16px;
-  display: flex;
-  justify-content: space-between;
+// 重複頻率
+.repeat-frequency-btn {
+  .modal {
+    @include modal-ver1;
+  }
+  .modal-content {
+    @include modal-content-ver1;
+  }
+  .modal-header {
+    @include modal-header-ver1;
+    &::before {
+      @include modal-header-ver1-before;
+    }
+    &::after {
+      @include modal-header-ver1-after;
+    }
+    .btn-close {
+      @include modal-header-ver1-btn-close;
+    }
+  }
+  .frequency-item {
+    border-top: 1px solid $gray-100;
+    &:last-child {
+      border-bottom: 1px solid $gray-100;
+    }
+  }
 }
+// 自動還款提醒
+
 #remark {
   border: 1px solid $gray-200;
   padding: 8px 12px;

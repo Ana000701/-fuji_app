@@ -1,0 +1,52 @@
+@mixin modal-ver1 {
+  width: 375px;
+  height: auto;
+  top: unset;
+  bottom: 0;
+  left: 50%;
+  overflow-y: hidden;
+  transform: translateX(-50%);
+}
+
+@mixin modal-content-ver1 {
+  height: 469px;
+  padding: 21px 16px 44px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border: none;
+}
+
+@mixin modal-header-ver1 {
+  justify-content: space-between;
+  border-bottom: none;
+  padding: 8px 0 0;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+@mixin modal-header-ver1-before {
+  width: 24px;
+  content: "";
+  display: block;
+}
+
+@mixin modal-header-ver1-after {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  width: 36px;
+  height: 5px;
+  border-radius: 2px;
+  background: rgba(#3c3c43, 0.3);
+}
+
+@mixin modal-header-ver1-btn-close {
+  margin: 0;
+  padding: 4px;
+  color: $gray-800;
+  background: center / 1em auto no-repeat url(/assets/images/icon-cancel.svg);
+}

@@ -21,7 +21,7 @@
       </div>
     </header>
     <main>
-      <header class="add-bill-btn py-4">
+      <div class="add-bill-btn py-4">
         <div class="container-fluid">
           <ul class="nav nav-pills" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
@@ -69,7 +69,7 @@
 
                 <!-- category -->
                 <div
-                  class="d-flex justify-content-between align-items-center mb-4"
+                  class="category-btn d-flex justify-content-between align-items-center mb-4"
                 >
                   <label
                     for="category"
@@ -100,7 +100,7 @@
                     aria-labelledby="categoryModalLabel"
                     aria-hidden="true"
                   >
-                    <div class="modal-dialog">
+                    <div class="modal-dialog m-0">
                       <div class="modal-content">
                         <div class="modal-header">
                           <p class="text-gray-800 fs-4 fw-bold lh-xs">
@@ -113,7 +113,7 @@
                             aria-label="Close"
                           ></button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body p-0">
                           <div class="d-flex flex-column category-item">
                             <img
                               src="/assets/images/food.svg"
@@ -255,7 +255,7 @@
                   aria-labelledby="partnerModalLabel"
                   aria-hidden="true"
                 >
-                  <div class="modal-dialog">
+                  <div class="modal-dialog m-0">
                     <div class="modal-content">
                       <div class="modal-header">
                         <p class="text-gray-800 fs-4 fw-bold lh-xs">
@@ -268,7 +268,7 @@
                           aria-label="Close"
                         ></button>
                       </div>
-                      <div class="modal-body">
+                      <div class="modal-body p-0">
                         <div
                           class="partner-item d-flex align-items-center py-4"
                         >
@@ -311,123 +311,201 @@
 
               <div class="py-2 mb-4">
                 <!-- repeat payment -->
-                <button
-                  class="repeat-payment-btn d-flex justify-content-between align-items-center p-0 mb-4 w-100"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#repeatPaymentCollapse"
-                  aria-expanded="false"
-                  aria-controls="repeatPaymentCollapse"
-                >
-                  <p class="text-gray-800 fs-6 fw-normal lh-lg">重複扣款</p>
-                  <img
-                    src="../assets/images/icon-toggle-off.svg"
-                    alt="icon-toggle-off"
-                  />
-                </button>
-                <div class="collapse" id="repeatPaymentCollapse">
-                  <!-- frequency -->
-                  <div
-                    class="d-flex justify-content-between align-items-center"
+                <div class="repeat-payment">
+                  <!-- repeat payment button -->
+                  <button
+                    class="repeat-payment-btn d-flex justify-content-between align-items-center p-0 mb-4 w-100"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#repeatPaymentCollapse"
+                    aria-expanded="false"
+                    aria-controls="repeatPaymentCollapse"
                   >
-                    <label
-                      for="frequency"
-                      class="text-gray-800 fs-6 fw-normal lh-lg"
-                      >重複頻率</label
-                    >
-                    <!-- frequency button -->
-                    <button
-                      type="button"
-                      class="d-flex justify-content-between align-items-center"
-                      data-bs-toggle="modal"
-                      data-bs-target="#frequencyModal"
-                      id="frequency"
-                    >
-                      <p class="text-gray-800 fs-6 fw-normal lh-lg">每月</p>
-                      <img
-                        src="../assets/images/icon-arrow-down.svg"
-                        alt="icon-arrow-down"
-                      />
-                    </button>
-                    <!-- end of frequency button -->
-                    <!-- frequency modal -->
+                    <p class="text-gray-800 fs-6 fw-normal lh-lg">重複扣款</p>
+                    <img
+                      src="../assets/images/icon-toggle-off.svg"
+                      alt="icon-toggle-off"
+                    />
+                  </button>
+                  <!-- end of repeat payment button -->
+
+                  <!-- repeat payment collapse -->
+                  <div class="collapse" id="repeatPaymentCollapse">
+                    <!--repeat frequency -->
                     <div
-                      class="modal fade"
-                      id="frequencyModal"
-                      tabindex="-1"
-                      aria-labelledby="frequencyModalLabel"
-                      aria-hidden="true"
+                      class="repeat-frequency-btn d-flex justify-content-between align-items-center mb-4"
                     >
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <p class="text-gray-800 fs-4 fw-bold lh-xs">
-                              重複頻率
-                            </p>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></button>
+                      <label
+                        for="frequency"
+                        class="text-gray-800 fs-6 fw-normal lh-lg"
+                        >重複頻率</label
+                      >
+                      <!-- repeat frequency button -->
+                      <button
+                        type="button"
+                        class="d-flex justify-content-between align-items-center"
+                        data-bs-toggle="modal"
+                        data-bs-target="#frequencyModal"
+                        id="frequency"
+                      >
+                        <p class="fs-6 fw-normal lh-lg">每月</p>
+                        <img
+                          src="../assets/images/icon-arrow-down.svg"
+                          alt="icon-arrow-down"
+                        />
+                      </button>
+                      <!-- end of repeat frequency button -->
+                      <!-- repeat frequency modal -->
+                      <div
+                        class="modal fade"
+                        id="frequencyModal"
+                        tabindex="-1"
+                        aria-labelledby="frequencyModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog m-0">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <p class="text-gray-800 fs-4 fw-bold lh-xs">
+                                重複頻率
+                              </p>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body p-0">
+                              <div class="frequency-item py-7">
+                                <p class="text-gray-800 fs-6 fw-normal lh-lg">
+                                  每週
+                                </p>
+                              </div>
+                              <div class="frequency-item py-7">
+                                <p class="text-gray-800 fs-6 fw-normal lh-lg">
+                                  每月
+                                </p>
+                              </div>
+                              <div class="frequency-item py-7">
+                                <p class="text-gray-800 fs-6 fw-normal lh-lg">
+                                  每半年
+                                </p>
+                              </div>
+                              <div class="frequency-item py-7">
+                                <p class="text-gray-800 fs-6 fw-normal lh-lg">
+                                  每一年
+                                </p>
+                              </div>
+                            </div>
                           </div>
-                          <div class="modal-body"></div>
                         </div>
                       </div>
+                      <!-- end of repeat frequency modal -->
                     </div>
-                    <!-- end of frequency modal -->
+                    <!-- repeat frequency -->
+
+                    <!-- start date -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-4"
+                    >
+                      <label
+                        for="startDate"
+                        class="text-gray-800 fs-6 fw-normal lh-lg"
+                        >開始日期</label
+                      >
+                      <button type="button" id="startDate">
+                        <p class="fs-6 fw-normal lh-lg">2024/07/21</p>
+                        <img
+                          src="../assets/images/icon-arrow-down.svg"
+                          alt="icon-arrow-down"
+                        />
+                      </button>
+                    </div>
+                    <!-- end of start date -->
+                    <!-- end date -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-4"
+                    >
+                      <label
+                        for="endDate"
+                        class="text-gray-800 fs-6 fw-normal lh-lg"
+                        >結束日期</label
+                      >
+                      <button type="button" id="endDate" disabled>
+                        <p class="fs-6 fw-normal lh-lg">無</p>
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.72456 6.64155C3.94645 6.41967 4.29367 6.39949 4.53835 6.58104L4.60845 6.64155L9.99984 12.0327L15.3912 6.64155C15.6131 6.41967 15.9603 6.39949 16.205 6.58104L16.2751 6.64155C16.497 6.86344 16.5172 7.21066 16.3356 7.45534L16.2751 7.52544L10.4418 13.3588C10.2199 13.5807 9.87267 13.6008 9.62799 13.4193L9.5579 13.3588L3.72456 7.52544C3.48048 7.28136 3.48048 6.88563 3.72456 6.64155Z"
+                            fill="#98A2B3"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <!-- end of end date -->
                   </div>
-                  <!-- frequency -->
+                  <!-- end of repeat payment collapse -->
                 </div>
                 <!--end of repeat payment -->
-
                 <!-- repayment reminder -->
-                <button
-                  class="repeat-payment-btn d-flex justify-content-between align-items-center p-0 mb-4 w-100"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#repaymentCollapse"
-                  aria-expanded="false"
-                  aria-controls="repaymentCollapse"
-                >
-                  <p class="text-gray-800 fs-6 fw-normal lh-lg">自動還款提醒</p>
-                  <img
-                    src="../assets/images/icon-toggle-off.svg"
-                    alt="icon-toggle-off"
-                  />
-                </button>
-                <div class="collapse" id="repaymentCollapse">
-                  <div class="">
-                    Some placeholder content for the collapse component. This
-                    panel is hidden by default but revealed when the user
-                    activates the relevant trigger.
+                <div class="repayment">
+                  <button
+                    class="repayment-btn d-flex justify-content-between align-items-center p-0 mb-4 w-100"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#repaymentCollapse"
+                    aria-expanded="false"
+                    aria-controls="repaymentCollapse"
+                  >
+                    <p class="text-gray-800 fs-6 fw-normal lh-lg">
+                      自動還款提醒
+                    </p>
+                    <img
+                      src="../assets/images/icon-toggle-off.svg"
+                      alt="icon-toggle-off"
+                    />
+                  </button>
+                  <div class="collapse" id="repaymentCollapse">
+                    <div class="">
+                      Some placeholder content for the collapse component. This
+                      panel is hidden by default but revealed when the user
+                      activates the relevant trigger.
+                    </div>
                   </div>
                 </div>
                 <!-- end of repayment reminder -->
-
                 <!-- remark -->
-                <form>
-                  <label
-                    for="remark"
-                    class="fs-6 fw-normal lh-lg text-black my-2"
-                    >備註</label
-                  >
-                  <textarea
-                    class="rounded-2 w-100"
-                    id="remark"
-                    rows="2"
-                    placeholder="輸入備註內容"
-                  ></textarea>
-                </form>
+                <div>
+                  <form>
+                    <label
+                      for="remark"
+                      class="fs-6 fw-normal lh-lg text-black my-2"
+                      >備註</label
+                    >
+                    <textarea
+                      class="rounded-2 w-100"
+                      id="remark"
+                      rows="2"
+                      placeholder="輸入備註內容"
+                    ></textarea>
+                  </form>
+                </div>
                 <!-- end of remark -->
+                <button
+                  type="submit"
+                  class="border border-1 border-gray-200 rounded-5 bg-gray-200 text-gray-400 fs-4 fw-bold lh-xs py-3 w-100"
+                >
+                  新增
+                </button>
               </div>
-              <button
-                type="submit"
-                class="border border-1 border-gray-200 rounded-5 bg-gray-200 text-gray-400 fs-4 fw-bold lh-xs py-3 w-100"
-              >
-                新增
-              </button>
             </div>
+
             <div
               class="tab-pane fade"
               id="pills-profile"
@@ -439,7 +517,7 @@
             </div>
           </div>
         </div>
-      </header>
+      </div>
     </main>
     <!-- vite -->
     <script type="module" src="../main.js"></script>
