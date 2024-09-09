@@ -135,7 +135,32 @@
     padding-top: 8px;
     padding-bottom: 8px;
   }
+  .modal-dialog {
+    @include modal-dialog-ver1;
+  }
+  .modal-content {
+    @include modal-content-ver1;
+  }
+  .modal-header {
+    @include modal-header-ver1;
+    &::before {
+      @include modal-header-ver1-before;
+    }
+    &::after {
+      @include modal-header-ver1-after;
+    }
+    .btn-close {
+      @include modal-header-ver1-btn-close;
+    }
+  }
+  .partner-item {
+    border-top: 1px solid $gray-100;
+    &:last-child {
+      border-bottom: 1px solid $gray-100;
+    }
+  }
   #partner,
+  #partner2,
   #apportionment {
     width: 207px;
     border: 1px solid $gray-200;
