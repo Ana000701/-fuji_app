@@ -129,9 +129,32 @@
 }
 // 重複扣款
 .repeat-payment {
-  .repeat-payment-btn {
+  transition: all 0.5s ease-in;
+  #repeat-payment-btn {
+    position: relative;
+    width: 51px;
+    height: 31px;
     border: none;
+    border-radius: 100px;
+    background: #78788029;
+    transition: background-color 0.5s;
+  }
+  .handle {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 27px;
+    height: 27px;
+    border-radius: 100px;
     background-color: white;
+    box-shadow: 0px 4px 4px 0px #7e7e7e70;
+    transition: left 0.5s;
+  }
+  .openStyle {
+    background-color: $primary-400 !important;
+  }
+  .move {
+    left: 20px;
   }
   #frequency,
   #startDate,
@@ -153,10 +176,8 @@
     color: $gray-400;
     background-color: $gray-100;
   }
-  .fill-gray-400 {
-    fill: $gray-400 !important;
-  }
 }
+
 // 重複頻率
 .repeat-frequency-btn {
   .modal {
@@ -184,7 +205,162 @@
     }
   }
 }
+
+// 無結束日期
+.endDate-disabled-checkbox {
+  input[type="checkbox"] {
+    display: none;
+  }
+  input[type="checkbox"]:checked + label::before {
+    display: none; //點擊後將框框設為不可視
+  }
+  input[type="checkbox"]:checked + label::after {
+    display: block; //點擊後將勾勾設為可視
+  }
+  position: relative;
+  label {
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      border-radius: 4px;
+      border: 1px solid $gray-300;
+    }
+    &::after {
+      display: none;
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      border-radius: 4px;
+      background-image: url(/assets/images/icon-checkbox.svg);
+      background-position: center;
+      background-color: $primary-400;
+      border: 1px solid $primary-400;
+    }
+  }
+}
+
+// 重複扣款、自動還款提醒共用展開效果
+.showStyle {
+  padding: 16px;
+  border: 1px solid $primary-200;
+  border-radius: 16px;
+  box-shadow: 0px 4px 8px -2px #0000001a;
+
+  > div {
+    &:first-child {
+      padding-bottom: 16px;
+      border-bottom: 1px solid #ededed;
+    }
+  }
+}
 // 自動還款提醒
+.repayment-reminder {
+  transition: all 0.5s;
+  #repayment-reminder-btn {
+    position: relative;
+    width: 51px;
+    height: 31px;
+    border: none;
+    border-radius: 100px;
+    background: #78788029;
+    transition: background-color 0.5s;
+  }
+  .handle2 {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 27px;
+    height: 27px;
+    border-radius: 100px;
+    background-color: white;
+    box-shadow: 0px 4px 4px 0px #7e7e7e70;
+    transition: left 0.5s;
+  }
+  .openStyle {
+    background-color: $primary-400 !important;
+  }
+  .move {
+    left: 20px;
+  }
+  #frequency2,
+  #character {
+    width: 207px;
+    border: 1px solid $gray-200;
+    border-radius: 8px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #frequency2,
+  #character {
+    color: $gray-800;
+    background-color: white;
+  }
+}
+// 重複頻率2
+.repeat-frequency2-btn {
+  .modal {
+    @include modal-ver1;
+  }
+  .modal-content {
+    @include modal-content-ver1;
+  }
+  .modal-header {
+    @include modal-header-ver1;
+    &::before {
+      @include modal-header-ver1-before;
+    }
+    &::after {
+      @include modal-header-ver1-after;
+    }
+    .btn-close {
+      @include modal-header-ver1-btn-close;
+    }
+  }
+  .frequency-item {
+    border-top: 1px solid $gray-100;
+    &:last-child {
+      border-bottom: 1px solid $gray-100;
+    }
+  }
+}
+// 心情人物
+.character-btn {
+  .modal {
+    @include modal-ver1;
+  }
+  .modal-content {
+    @include modal-content-ver1;
+  }
+  .modal-header {
+    @include modal-header-ver1;
+    &::before {
+      @include modal-header-ver1-before;
+    }
+    &::after {
+      @include modal-header-ver1-after;
+    }
+    .btn-close {
+      @include modal-header-ver1-btn-close;
+    }
+  }
+  .character-item {
+    padding-left: 16px;
+    padding-right: 10px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 1px solid $gray-200;
+  }
+}
 
 #remark {
   border: 1px solid $gray-200;
