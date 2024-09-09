@@ -2,3 +2,62 @@
   font-size: 26px;
   line-height: 1.2;
 }
+.week{
+  width: 14.28572857%;
+  color: $gray-400;
+  font-size: $h8-font-size;
+  white-space:nowrap;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: default;
+}
+.day{
+  display: flex;
+  flex-wrap: wrap;
+  user-select: none;
+  
+}
+.date{
+  width: 14.28572857%;
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  font-weight: 400;
+  border-radius: 50%;
+  background: #FFF;
+  transition: all .25s ease;
+  cursor: pointer;
+}
+.action,
+.date:hover{
+  background: $primary-400;
+  color: #FFF;
+  font-weight: 700;
+
+}
+.main .bi{
+  font-size: 20px;
+}
+.mark{
+  position: relative;
+}
+.mark::after{
+  content: "";
+  background: $primary-400;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: calc(50% - 3px);
+  bottom: 0;
+  border-radius: 50%;
+}
+.form-select{
+  border: none;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #101828;
+}
