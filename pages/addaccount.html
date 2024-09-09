@@ -89,7 +89,7 @@
                     data-bs-target="#categoryModal"
                     id="category"
                   >
-                    <p class="text-gray-400 fs-6 fw-normal lh-lg">請選擇類別</p>
+                    <p class="category-name fs-6 fw-normal lh-lg">請選擇類別</p>
                     <img
                       src="../assets/images/icon-arrow-down.svg"
                       alt="icon-arrow-down"
@@ -105,10 +105,10 @@
                     aria-labelledby="categoryModalLabel"
                     aria-hidden="true"
                   >
-                    <div class="modal-dialog m-0">
+                    <div class="modal-dialog">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <p class="text-gray-800 fs-4 fw-bold lh-xs">
+                          <p class="text-gray-800 fs-6 fw-bold lh-xs">
                             選擇類別
                           </p>
                           <button
@@ -260,7 +260,7 @@
                   aria-labelledby="partnerModalLabel"
                   aria-hidden="true"
                 >
-                  <div class="modal-dialog m-0">
+                  <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
                         <p class="text-gray-800 fs-4 fw-bold lh-xs">
@@ -313,6 +313,141 @@
                 <!-- end of partner modal -->
               </div>
               <!-- end of partner -->
+              <!-- partner collapse-->
+              <div
+                class="partner-collapse border border-1 border-primary-200 rounded-4 p-4 mb-4"
+              >
+                <div
+                  class="d-flex justify-content-between align-items-center border-0 bg-white w-100 mb-4"
+                >
+                  <p class="text-gray-800 fs-6 fw-bold lh-lg">共同支付者</p>
+                  <img
+                    src="../assets/images/icon-plus-primary.svg"
+                    alt="icon-plus-primary"
+                    class="collapse-cancel-button"
+                  />
+                </div>
+                <!--分攤對象 -->
+                <div
+                  class="partner-name-btn d-flex justify-content-between align-items-center mb-4"
+                >
+                  <label
+                    for="partner"
+                    class="text-gray-800 fs-6 fw-normal lh-lg"
+                    >分攤對象</label
+                  >
+                  <button
+                    type="button"
+                    class="d-flex justify-content-between align-items-center"
+                    data-bs-toggle="modal"
+                    data-bs-target="#partnerModal"
+                    id="partner"
+                  >
+                    <p class="partner-select-name fs-6 fw-normal lh-lg">Yuki</p>
+                    <img
+                      src="../assets/images/icon-arrow-down.svg"
+                      alt="icon-arrow-down"
+                    />
+                  </button>
+                </div>
+                <!-- end of 分攤對象 -->
+
+                <!--apportionment -->
+                <div
+                  class="apportionment-btn d-flex justify-content-between align-items-center mb-4"
+                >
+                  <label
+                    for="apportionment"
+                    class="text-gray-800 fs-6 fw-normal lh-lg"
+                    >分攤方式</label
+                  >
+                  <!-- apportionment button -->
+                  <button
+                    type="button"
+                    class="d-flex justify-content-between align-items-center"
+                    data-bs-toggle="modal"
+                    data-bs-target="#apportionmentModal"
+                    id="apportionment"
+                  >
+                    <p class="fs-6 fw-normal lh-lg">平均分攤</p>
+                    <img
+                      src="../assets/images/icon-arrow-down.svg"
+                      alt="icon-arrow-down"
+                    />
+                  </button>
+                  <!-- end of apportionment button -->
+                  <!-- apportionment modal -->
+                  <div
+                    class="modal fade"
+                    id="apportionmentModal"
+                    tabindex="-1"
+                    aria-labelledby="apportionmentModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <p class="text-gray-800 fs-4 fw-bold lh-xs">
+                            分攤方式
+                          </p>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body p-0">
+                          <div class="apportionment-item py-7">
+                            <p class="text-gray-800 fs-6 fw-normal lh-lg">
+                              平均分攤
+                            </p>
+                          </div>
+                          <div class="apportionment-item py-7">
+                            <p class="text-gray-800 fs-6 fw-normal lh-lg">
+                              自訂比例
+                            </p>
+                          </div>
+                          <div class="apportionment-item py-7">
+                            <p class="text-gray-800 fs-6 fw-normal lh-lg">
+                              自訂金額
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end of apportionment modal -->
+                </div>
+                <!--end of apportionment-->
+                <!-- 分攤對象 icon -->
+                <div>
+                  <div
+                    class="d-flex justify-content-between mb-4 pt-4 border-top border-1 border-gray-200"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="../assets/images/yuki.svg"
+                        alt="partner-image"
+                        class="partner-image me-2"
+                      />
+                      <p class="partner-name">Yuki</p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="../assets/images/una.svg"
+                        alt="partner-image"
+                        class="partner-image me-2"
+                      />
+                      <p class="partner-name">Una</p>
+                    </div>
+                  </div>
+                </div>
+                <!--end of 分攤對象 icon -->
+              </div>
+              <!-- end of partner collapse -->
 
               <div class="py-2 mb-4">
                 <!-- repeat payment -->
@@ -329,9 +464,9 @@
                       id="repeat-payment-btn"
                       type="button"
                       data-bs-toggle="collapse"
-                      data-bs-target="#collapseExample"
+                      data-bs-target="#partnerCollapseExample"
                       aria-expanded="false"
-                      aria-controls="collapseExample"
+                      aria-controls="partnerCollapseExample"
                     >
                       <div class="handle"></div>
                     </button>
@@ -339,7 +474,7 @@
                   <!-- end of repeat payment button -->
 
                   <!-- repeat payment collapse -->
-                  <div class="collapse" id="collapseExample">
+                  <div class="collapse" id="partnerCollapseExample">
                     <!--repeat frequency -->
                     <div
                       class="repeat-frequency-btn d-flex justify-content-between align-items-center mb-4"
@@ -372,7 +507,7 @@
                         aria-labelledby="frequencyModalLabel"
                         aria-hidden="true"
                       >
-                        <div class="modal-dialog m-0">
+                        <div class="modal-dialog">
                           <div class="modal-content">
                             <div class="modal-header">
                               <p class="text-gray-800 fs-4 fw-bold lh-xs">
@@ -493,9 +628,9 @@
                       id="repayment-reminder-btn"
                       type="button"
                       data-bs-toggle="collapse"
-                      data-bs-target="#collapseExample2"
+                      data-bs-target="#partnerCollapseExample2"
                       aria-expanded="false"
-                      aria-controls="collapseExample2"
+                      aria-controls="partnerCollapseExample2"
                     >
                       <div class="handle2"></div>
                     </button>
@@ -503,7 +638,7 @@
                   <!-- end of repeat payment button -->
 
                   <!-- repeat payment collapse -->
-                  <div class="collapse" id="collapseExample2">
+                  <div class="collapse" id="partnerCollapseExample2">
                     <!--repeat frequency2 -->
                     <div
                       class="repeat-frequency2-btn d-flex justify-content-between align-items-center mb-4"
@@ -536,7 +671,7 @@
                         aria-labelledby="frequency2ModalLabel"
                         aria-hidden="true"
                       >
-                        <div class="modal-dialog m-0">
+                        <div class="modal-dialog">
                           <div class="modal-content">
                             <div class="modal-header">
                               <p class="text-gray-800 fs-4 fw-bold lh-xs">
@@ -610,7 +745,7 @@
                         aria-labelledby="characterModalLabel"
                         aria-hidden="true"
                       >
-                        <div class="modal-dialog modal-dialog-scrollable m-0">
+                        <div class="modal-dialog modal-dialog-scrollable">
                           <div class="modal-content">
                             <div class="modal-header">
                               <p class="text-gray-800 fs-4 fw-bold lh-xs">
@@ -714,13 +849,39 @@
                       </form>
                     </div>
                     <!-- end of 留言 -->
-                    <div>
-                      <a href="message.html">
-                        <img
-                          src="../assets/images/icon-message.svg"
-                          alt="icon-message"
-                        />
-                      </a>
+                    <!-- message button -->
+                    <div class="message">
+                      <button
+                        type="button"
+                        class="message-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#messageModal"
+                      >
+                        <p class="fs-6 fw-bold lh-sm">預覽訊息</p>
+                      </button>
+
+                      <!-- message Modal -->
+                      <div
+                        class="modal fade"
+                        id="messageModal"
+                        tabindex="-1"
+                        aria-labelledby="messageModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">...</div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <!-- end of repeat payment collapse -->
@@ -728,29 +889,27 @@
                 <!-- end of repayment reminder -->
 
                 <!-- remark -->
-                <div>
-                  <form>
-                    <label
-                      for="remark"
-                      class="fs-6 fw-normal lh-lg text-black my-2"
-                      >備註</label
-                    >
-                    <textarea
-                      class="rounded-2 w-100"
-                      id="remark"
-                      rows="2"
-                      placeholder="輸入備註內容"
-                    ></textarea>
-                  </form>
-                </div>
+                <form>
+                  <label
+                    for="remark"
+                    class="fs-6 fw-normal lh-lg text-black my-2"
+                    >備註</label
+                  >
+                  <textarea
+                    class="rounded-2 w-100"
+                    id="remark"
+                    rows="2"
+                    placeholder="輸入備註內容"
+                  ></textarea>
+                </form>
                 <!-- end of remark -->
-                <button
-                  type="submit"
-                  class="border border-1 border-gray-200 rounded-5 bg-gray-200 text-gray-400 fs-4 fw-bold lh-xs py-3 w-100"
-                >
-                  新增
-                </button>
               </div>
+              <button
+                type="submit"
+                class="border border-1 border-gray-200 rounded-5 bg-gray-200 text-gray-400 fs-4 fw-bold lh-xs py-3 w-100"
+              >
+                新增
+              </button>
             </div>
 
             <div

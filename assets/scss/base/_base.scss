@@ -9,6 +9,20 @@ ol {
   list-style: none;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 // 共用container 確保寬度控制在375px
 .container-fluid {
   max-width: 375px;

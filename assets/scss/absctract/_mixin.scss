@@ -1,11 +1,17 @@
-@mixin modal-ver1 {
+@mixin modal-dialog-ver1 {
   width: 375px;
-  height: auto;
-  top: unset;
+  position: fixed;
+  margin-top: 0;
+  margin-bottom: 0;
   bottom: 0;
   left: 50%;
-  overflow-y: hidden;
-  transform: translateX(-50%);
+}
+
+@mixin fade-modal-dialog-ver1 {
+  transform: translate(-50%, 50px);
+}
+@mixin show-modal-dialog-ver1 {
+  transform: translate(-50%, 0);
 }
 
 @mixin modal-content-ver1 {
@@ -46,7 +52,20 @@
 
 @mixin modal-header-ver1-btn-close {
   margin: 0;
-  padding: 4px;
+  width: 24px;
+  height: 24px;
   color: $gray-800;
-  background: center / 1em auto no-repeat url(/assets/images/icon-cancel.svg);
+  background: center / 1rem auto no-repeat url(/assets/images/icon-cancel.svg);
+  opacity: 1;
+}
+
+@mixin modal-dialog-ver2 {
+  width: 343px;
+  position: fixed;
+  left: 50%;
+}
+@mixin modal-cotent-ver2 {
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid var(--Grey-200, #e4e7ec);
 }

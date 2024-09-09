@@ -43,6 +43,7 @@
   background-color: white;
   border: none;
   border-bottom: 1px solid $gray-200;
+  p,
   &::placeholder {
     font-size: 16px;
     font-weight: 400;
@@ -59,8 +60,8 @@
 
 // 類別選單
 .category-btn {
-  .modal {
-    @include modal-ver1;
+  .modal-dialog {
+    @include modal-dialog-ver1;
   }
   .modal-content {
     @include modal-content-ver1;
@@ -102,8 +103,8 @@
 // 選擇共同支付者
 .partner-btn {
   box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.1);
-  .modal {
-    @include modal-ver1;
+  .modal-dialog {
+    @include modal-dialog-ver1;
   }
   .modal-content {
     @include modal-content-ver1;
@@ -124,6 +125,52 @@
     border-top: 1px solid $gray-100;
     &:last-child {
       border-bottom: 1px solid $gray-100;
+    }
+  }
+}
+.partner-collapse {
+  box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.1);
+  .collapse-cancel-button {
+    transform: rotate(45deg);
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  #partner,
+  #apportionment {
+    width: 207px;
+    border: 1px solid $gray-200;
+    border-radius: 8px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $gray-800;
+    background-color: white;
+  }
+  .apportionment-btn {
+    .modal-dialog {
+      @include modal-dialog-ver1;
+    }
+    .modal-content {
+      @include modal-content-ver1;
+    }
+    .modal-header {
+      @include modal-header-ver1;
+      &::before {
+        @include modal-header-ver1-before;
+      }
+      &::after {
+        @include modal-header-ver1-after;
+      }
+      .btn-close {
+        @include modal-header-ver1-btn-close;
+      }
+    }
+    .apportionment-item {
+      border-top: 1px solid $gray-100;
+      &:last-child {
+        border-bottom: 1px solid $gray-100;
+      }
     }
   }
 }
@@ -177,11 +224,10 @@
     background-color: $gray-100;
   }
 }
-
 // 重複頻率
 .repeat-frequency-btn {
-  .modal {
-    @include modal-ver1;
+  .modal-dialog {
+    @include modal-dialog-ver1;
   }
   .modal-content {
     @include modal-content-ver1;
@@ -205,7 +251,6 @@
     }
   }
 }
-
 // 無結束日期
 .endDate-disabled-checkbox {
   input[type="checkbox"] {
@@ -243,21 +288,6 @@
       background-position: center;
       background-color: $primary-400;
       border: 1px solid $primary-400;
-    }
-  }
-}
-
-// 重複扣款、自動還款提醒共用展開效果
-.showStyle {
-  padding: 16px;
-  border: 1px solid $primary-200;
-  border-radius: 16px;
-  box-shadow: 0px 4px 8px -2px #0000001a;
-
-  > div {
-    &:first-child {
-      padding-bottom: 16px;
-      border-bottom: 1px solid #ededed;
     }
   }
 }
@@ -308,8 +338,8 @@
 }
 // 重複頻率2
 .repeat-frequency2-btn {
-  .modal {
-    @include modal-ver1;
+  .modal-dialog {
+    @include modal-dialog-ver1;
   }
   .modal-content {
     @include modal-content-ver1;
@@ -335,11 +365,12 @@
 }
 // 心情人物
 .character-btn {
-  .modal {
-    @include modal-ver1;
+  .modal-dialog {
+    @include modal-dialog-ver1;
   }
   .modal-content {
     @include modal-content-ver1;
+    height: auto;
   }
   .modal-header {
     @include modal-header-ver1;
@@ -361,20 +392,59 @@
     border: 1px solid $gray-200;
   }
 }
-
-::-webkit-scrollbar {
-  width: 10px;
-  background-color: transparent;
+// 留言
+// 留言 btn
+.message-btn {
+  display: flex;
+  align-items: center;
+  color: $gray-400;
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid $gray-400;
+  padding: 4px 0;
+  margin: 8px auto;
+  &::before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    background-image: url(/assets/images/icon-message.svg);
+  }
+  transition: all 0.03s ease;
+  &:hover,
+  &:active {
+    color: $primary-400;
+    border-bottom: 1px solid $primary-400;
+    &::before {
+      background-image: url(/assets/images/icon-message-primary.svg);
+    }
+  }
+  &:focus-visible {
+    color: $gray-400;
+    border-bottom: 1px solid $gray-400;
+  }
 }
-
-::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 10px;
+// 留言 modal
+.message {
+  .modal-dialog {
+    @include modal-dialog-ver2;
+  }
+  .modal-content {
+    @include modal-cotent-ver2;
+  }
+  .modal-header {
+    @include modal-header-ver1;
+    justify-content: flex-end;
+    .btn-close {
+      @include modal-header-ver1-btn-close;
+      padding: 0;
+    }
+  }
 }
-
-::-webkit-scrollbar-track {
-  background-color: transparent;
-}
+// 備註
 #remark,
 #message {
   border: 1px solid $gray-200;
@@ -385,4 +455,27 @@
     line-height: 25.6px;
     color: $gray-400;
   }
+}
+
+// 重複扣款、自動還款提醒共用展開效果
+.showStyle {
+  padding: 16px;
+  border: 1px solid $primary-200;
+  border-radius: 16px;
+  box-shadow: 0px 4px 8px -2px #0000001a;
+
+  > div {
+    &:first-child {
+      padding-bottom: 16px;
+      border-bottom: 1px solid #ededed;
+    }
+  }
+}
+
+// modal 共用位移：由下往上出現
+.modal.fade .modal-dialog {
+  @include fade-modal-dialog-ver1;
+}
+.modal.show .modal-dialog {
+  @include show-modal-dialog-ver1;
 }
