@@ -17,15 +17,50 @@
   <!-- bottom navigation -->
   <%- include("./layout/bottom-navigation"); -%>
     <!-- end of bottom navigation -->
-    <div class="container-fluid main" style="border: 1px solid #F00;">
+    <div class="container-fluid main">
       <div class="d-flex justify-content-between align-items-center">
-        <div><i class="bi bi-bell"></i></div>
+        
+        <div data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+          <img src="../assets/images/icon-bell.svg">
+        </div>
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Show a second modal and hide this one with the button below.
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Hide this modal and show the first with the button below.
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div>
           <select id="disabledSelect" class="form-select">
             <option>2024年9月</option>
           </select>
         </div>
-        <div><i class="bi bi-info-circle"></i></div>
+        <img src="../assets/images/icon-info.svg" alt="">
 
       </div>
       <div class="day">
@@ -76,13 +111,15 @@
           // 移除所有 div 的 class
           boxes.forEach(b => {
             b.classList.remove('action');
-            b.classList.add('class1');
           });
-          this.classList.remove('class1');
           this.classList.add('action');
         });
       });
     </script>
+    <div class="container-fluid text-center" style="border-top: 1px solid #E4E7EC;">
+      <p>沒有記錄<br>點擊 <span>＋</span> 新增一筆</p>
+    </div>
+    
     <!-- vite -->
     <script type="module" src="../main.js"></script>
 </body>
