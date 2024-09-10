@@ -44,6 +44,8 @@ const partnerCollapse = document.querySelector(".partner-collapse");
 collapseCancelBtn.addEventListener("click", () => {
   partnerCollapse.style.display = "none";
   partnerBtn.style.display = "block";
+  submitBtn.style.color = "#98A2B3";
+  submitBtn.style.backgroundColor = "#E4E7EC";
 });
 // 輸入金額
 const price = document.querySelector("#price");
