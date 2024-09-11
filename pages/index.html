@@ -34,13 +34,14 @@
               <div class="modal-body">
                 <div class="notification">
                   <div data-bs-dismiss="modal" aria-label="Close"><img src="../assets/images/icon-arrow-left.svg"
-                      alt=""></div>
+                     ></div>
                   <div>通知中心</div>
-                  <div><img src="../assets/images/icon-search.svg" alt=""></div>
+                  <div><img src="../assets/images/icon-search.svg"></div>
                 </div>
                 <div class="navbtn nav-tabs" id="myTab" role="tablist">
-                  <div class="notify action active" id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal-tab-pane"
-                    type="button" role="tab" aria-controls="personal-tab-pane" aria-selected="true">個人通知</div>
+                  <div class="notify action active" id="personal-tab" data-bs-toggle="tab"
+                    data-bs-target="#personal-tab-pane" type="button" role="tab" aria-controls="personal-tab-pane"
+                    aria-selected="true">個人通知</div>
                   <div class="notify" id="system-tab" data-bs-toggle="tab" data-bs-target="#system-tab-pane"
                     type="button" role="tab" aria-controls="system-tab-pane" aria-selected="false">系統通知</div>
                 </div>
@@ -51,28 +52,28 @@
                       <li class="new" data-bs-target="#exampleModalToggle1-1" data-bs-toggle="modal">
                         <div class="message">Amy 傳了悄悄話給妳，希望妳回覆</div>
                         <div class="share">
-                          <div class="share-use"><img src="../assets/images/icon-arrow-sm.svg" alt=""> 共享</div>
+                          <div class="share-use"><img src="../assets/images/icon-arrow-sm.svg"> 共享</div>
                           <div class="share-date">2024.07.27</div>
                         </div>
                       </li>
                       <li class="new" data-bs-target="#exampleModalToggle1-2" data-bs-toggle="modal">
                         <div class="message">Mina 已結清費用，可到共享帳本查收</div>
                         <div class="share">
-                          <div class="share-use"><img src="../assets/images/icon-arrow-sm.svg" alt=""> 共享</div>
+                          <div class="share-use"><img src="../assets/images/icon-arrow-sm.svg"> 共享</div>
                           <div class="share-date">2024.07.21</div>
                         </div>
                       </li>
                       <li class="new" data-bs-target="#exampleModalToggle1-3" data-bs-toggle="modal">
                         <div class="message">Amy 想高歌一首，看她唱了什麼</div>
                         <div class="share">
-                          <div class="share-use"><img src="../assets/images/icon-arrow-sm.svg" alt=""> 共享</div>
+                          <div class="share-use"><img src="../assets/images/icon-arrow-sm.svg"> 共享</div>
                           <div class="share-date">2024.07.21</div>
                         </div>
                       </li>
                       <li data-bs-target="#exampleModalToggle1-4" data-bs-toggle="modal">
                         <div class="message">Leo 已接受您的邀請，可以開始共享帳本了</div>
                         <div class="share">
-                          <div class="share-use"><img src="../assets/images/icon-arrow-sm.svg" alt=""> 共享</div>
+                          <div class="share-use"><img src="../assets/images/icon-arrow-sm.svg"> 共享</div>
                           <div class="share-date">2024.07.18</div>
                         </div>
                       </li>
@@ -84,21 +85,21 @@
                       <li class="new" data-bs-target="#exampleModalToggle2-1" data-bs-toggle="modal">
                         <div class="message">新推出了心情貼圖，歡迎使用</div>
                         <div class="share">
-                          <div class="share-use"><img src="../assets/images/icon-message.svg" alt=""> 一般</div>
+                          <div class="share-use"><img src="../assets/images/icon-message.svg"> 一般</div>
                           <div class="share-date">2024.07.20</div>
                         </div>
                       </li>
                       <li class="new" data-bs-target="#exampleModalToggle2-2" data-bs-toggle="modal">
                         <div class="message">邀請朋友一起來探吉吧！</div>
                         <div class="share">
-                          <div class="share-use"><img src="../assets/images/icon-message.svg" alt=""> 一般</div>
+                          <div class="share-use"><img src="../assets/images/icon-message.svg"> 一般</div>
                           <div class="share-date">2024.07.01</div>
                         </div>
                       </li>
                       <li data-bs-target="#exampleModalToggle2-3" data-bs-toggle="modal">
                         <div class="message">歡迎加入我們，使用前先探吉一下吧！</div>
                         <div class="share">
-                          <div class="share-use"><img src="../assets/images/icon-message.svg" alt=""> 一般</div>
+                          <div class="share-use"><img src="../assets/images/icon-message.svg"> 一般</div>
                           <div class="share-date">2024.07.01</div>
                         </div>
                       </li>
@@ -109,7 +110,8 @@
             </div>
           </div>
         </div>
-        <div class="modal fade" id="exampleModalToggle1-1" aria-hidden="true"
+        <!-- 個人通知modal -->
+        <div class="modal modal2 fade" id="exampleModalToggle1-1" aria-hidden="true"
           aria-labelledby="exampleModalToggleLabel1-1" tabindex="-1">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -117,19 +119,30 @@
                 <h1 class="modal-title fs-5" id="exampleModalToggleLabel1-1">Modal 1-1</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="modal-body">
-                Hide this modal and show the first with the button below.
-                <div class="next" data-bs-target="#exampleModalToggle1-2" data-bs-toggle="modal"><img src="../assets/images/icon-arrow-right.svg" alt=""></div>
-                <!-- <div class="prev"><img src="../assets/images/icon-arrow-left.svg" alt=""></div> -->
+              <div class="modal-body text-center">
+                <img class="img-fluid" src="../assets/images/people-1-lg.svg">
+                <div class="not-yet">
+                  <div>
+                    <img src="../assets/images/icon-rabbit.svg">
+                  </div>
+                  <span>Yuki</span><span>還沒收到</span><span class="cost-title">醫療長照費</span>
+                </div>
+                <div class="feeling">
+                  <span>感到懊惱 😖</span><span>yoyoyo, 這首歌沒有cash我唱不完 </span>
+                </div>
+                <div class="see-cost" data-bs-target="#exampleModalToggle3-1" data-bs-toggle="modal">看款項</div>
+                <div class="next" data-bs-target="#exampleModalToggle1-2" data-bs-toggle="modal"><img
+                    src="../assets/images/icon-arrow-right.svg"></div>
+                <!-- <div class="prev"><img src="../assets/images/icon-arrow-left.svg"></div> -->
               </div>
-              <div class="modal-footer">
+              <!-- <div class="modal-footer">
                 <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
                   first</button>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
-        <div class="modal fade" id="exampleModalToggle1-2" aria-hidden="true"
+        <div class="modal modal2 fade" id="exampleModalToggle1-2" aria-hidden="true"
           aria-labelledby="exampleModalToggleLabel1-2" tabindex="-1">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -137,19 +150,33 @@
                 <h1 class="modal-title fs-5" id="exampleModalToggleLabel1-2">Modal 1-2</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="modal-body">
-                Hide this modal and show the first with the button below.
-                <div class="next" data-bs-target="#exampleModalToggle1-3" data-bs-toggle="modal"><img src="../assets/images/icon-arrow-right.svg" alt=""></div>
-                <div class="prev" data-bs-target="#exampleModalToggle1-1" data-bs-toggle="modal"><img src="../assets/images/icon-arrow-left.svg" alt=""></div>
+              <div class="modal-body text-center">
+                <img class="img-fluid" src="../assets/images/five-high.svg">
+                <div class="not-yet">
+                  <div>
+                    <img src="../assets/images/mina.svg">
+                  </div>
+                  <span>Mina</span><span>已支付</span><span class="cost-title">醫療長照費</span>
+                </div>
+                <div class="feeling">
+                  <span>感到得意😊</span><span>晚餐加一隻雞腿</span>
+                  <hr>
+                  <span>轉出帳號：(812) 2888-10-XXXX-XXXX</span>
+                </div>
+                <div class="see-cost" data-bs-target="#exampleModalToggle3-1" data-bs-toggle="modal">看款項</div>
+                <div class="next" data-bs-target="#exampleModalToggle1-3" data-bs-toggle="modal"><img
+                    src="../assets/images/icon-arrow-right.svg"></div>
+                <div class="prev" data-bs-target="#exampleModalToggle1-1" data-bs-toggle="modal"><img
+                    src="../assets/images/icon-arrow-left.svg"></div>
               </div>
-              <div class="modal-footer">
+              <!-- <div class="modal-footer">
                 <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
                   first</button>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
-        <div class="modal fade" id="exampleModalToggle1-3" aria-hidden="true"
+        <div class="modal modal2 fade" id="exampleModalToggle1-3" aria-hidden="true"
           aria-labelledby="exampleModalToggleLabel1-3" tabindex="-1">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -159,8 +186,10 @@
               </div>
               <div class="modal-body">
                 Hide this modal and show the first with the button below.
-                <div class="next" data-bs-target="#exampleModalToggle1-4" data-bs-toggle="modal"><img src="../assets/images/icon-arrow-right.svg" alt=""></div>
-                <div class="prev" data-bs-target="#exampleModalToggle1-2" data-bs-toggle="modal"><img src="../assets/images/icon-arrow-left.svg" alt=""></div>
+                <div class="next" data-bs-target="#exampleModalToggle1-4" data-bs-toggle="modal"><img
+                    src="../assets/images/icon-arrow-right.svg"></div>
+                <div class="prev" data-bs-target="#exampleModalToggle1-2" data-bs-toggle="modal"><img
+                    src="../assets/images/icon-arrow-left.svg"></div>
               </div>
               <div class="modal-footer">
                 <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
@@ -169,7 +198,7 @@
             </div>
           </div>
         </div>
-        <div class="modal fade" id="exampleModalToggle1-4" aria-hidden="true"
+        <div class="modal modal2 fade" id="exampleModalToggle1-4" aria-hidden="true"
           aria-labelledby="exampleModalToggleLabel1-4" tabindex="-1">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -179,8 +208,9 @@
               </div>
               <div class="modal-body">
                 Hide this modal and show the first with the button below.
-                <!-- <div class="next" data-bs-target="#exampleModalToggle1-5" data-bs-toggle="modal"><img src="../assets/images/icon-arrow-right.svg" alt=""></div> -->
-                <div class="prev" data-bs-target="#exampleModalToggle1-3" data-bs-toggle="modal"><img src="../assets/images/icon-arrow-left.svg" alt=""></div>
+                <!-- <div class="next" data-bs-target="#exampleModalToggle1-5" data-bs-toggle="modal"><img src="../assets/images/icon-arrow-right.svg"></div> -->
+                <div class="prev" data-bs-target="#exampleModalToggle1-3" data-bs-toggle="modal"><img
+                    src="../assets/images/icon-arrow-left.svg"></div>
               </div>
               <div class="modal-footer">
                 <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
@@ -189,7 +219,8 @@
             </div>
           </div>
         </div>
-        <div class="modal fade" id="exampleModalToggle2-1" aria-hidden="true"
+        <!-- 系統通知modal -->
+        <div class="modal modal2 fade" id="exampleModalToggle2-1" aria-hidden="true"
           aria-labelledby="exampleModalToggleLabel2-1" tabindex="-1">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -207,7 +238,7 @@
             </div>
           </div>
         </div>
-        <div class="modal fade" id="exampleModalToggle2-2" aria-hidden="true"
+        <div class="modal modal2 fade" id="exampleModalToggle2-2" aria-hidden="true"
           aria-labelledby="exampleModalToggleLabel2-2" tabindex="-1">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -225,7 +256,7 @@
             </div>
           </div>
         </div>
-        <div class="modal fade" id="exampleModalToggle2-3" aria-hidden="true"
+        <div class="modal modal2 fade" id="exampleModalToggle2-3" aria-hidden="true"
           aria-labelledby="exampleModalToggleLabel2-3" tabindex="-1">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -243,12 +274,73 @@
             </div>
           </div>
         </div>
+        <!-- 看款項、顯示帳本內容 -->
+        <div class="modal modal1 fade" id="exampleModalToggle3-1" aria-hidden="true"
+          aria-labelledby="exampleModalToggleLabel3-1" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header edit">
+                <!--  data-bs-dismiss="modal" aria-label="Close" -->
+                <div data-bs-target="#exampleModalToggle1-1" data-bs-toggle="modal">
+                  <img src="../assets/images/icon-cancel.svg">
+                </div>
+                <div>
+                  <img src="../assets/images/icon-delete.svg">
+                  <img src="../assets/images/icon-edit.svg">
+                </div>
+              </div>
+              <div class="modal-body">
+                <div class="ledger">
+                  <div class="share-date">2024.07.20</div>
+                    <div class="details">
+                      <div class="details-title">
+                        <img src="../assets/images/food.svg">
+                        <span>午餐錢</span>
+                      </div>
+                      <div class="details-price">
+                        <span>250</span> <span>元</span>
+                      </div>
+                    </div>
+                    <hr class="hr">
+                    <div class="passbook">轉入帳號：(812)2888-10-XXXX-XXXXX</div>
+                    <div class="check" data-bs-target="#exampleModalToggle4-1" data-bs-toggle="modal">確認收款</div>
+                </div>
+                <div class="ledger">
+                  <div>include Ana寫過區塊</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- double check -->
+         <div class="modal modal2 fade" id="exampleModalToggle4-1" aria-hidden="true"
+         aria-labelledby="exampleModalToggleLabel4-1" tabindex="-1">
+         <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header close">
+              <div class="circle-icon" data-bs-target="#exampleModalToggle3-1" data-bs-toggle="modal">
+                <img class="img-fluid" src="../assets/images/icon-cancel.svg">
+              </div>
+            </div>
+            <div class="modal-body contain">
+             <div class="not-yet">
+               <span>已確認收到</span><span>Mina</span><span>的款項</span>
+             </div>
+             <div class="contain-text">完成收款確認後不得變更</div>
+            </div>
+            <div class="modal-footer checkbox">
+              <a class="check" href="divided.html">我已收到帳款</a>
+              <div class="check" data-bs-target="#exampleModalToggle3-1" data-bs-toggle="modal">取消</div>
+            </div>
+          </div>
+        </div>
+         </div>
         <div>
           <select id="disabledSelect" class="form-select">
             <option>2024年9月</option>
           </select>
         </div>
-        <img src="../assets/images/icon-info.svg" alt="">
+        <img src="../assets/images/icon-info.svg">
 
       </div>
       <div class="day">
@@ -323,7 +415,7 @@
       });
     </script>
     <div class="container-fluid no-record">
-      <p>沒有記錄<br>點擊 <img src="../assets/images/icon-plus-primary.svg" alt=""> 新增一筆</p>
+      <p>沒有記錄<br>點擊 <img src="../assets/images/icon-plus-primary.svg"> 新增一筆</p>
     </div>
 
     <!-- vite -->
