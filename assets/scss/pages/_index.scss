@@ -87,7 +87,7 @@ body{
   margin: 0 auto;
 }
 .modal1 .modal-content{
-  height: 100vh;
+  min-height: 100vh;
   border-radius: 0;
   border-width: 0;
 }
@@ -179,4 +179,26 @@ body{
   
   color: #667085;
   font-weight: 400;
+}
+.prev,
+.next{
+  background: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  padding: 8px;
+  box-shadow: 0 4px 12px #0003;
+}
+.next{
+  right: -1rem;
+
+}
+.prev{
+  left: -1rem;
+}
+
+@media (max-width: 575px){
+.modal-dialog{
+  margin: calc(var(--bs-modal-margin)* 2)
+}
 }

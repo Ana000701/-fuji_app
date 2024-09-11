@@ -19,7 +19,7 @@
 <body>
   <!-- bottom navigation -->
   <%- include("./layout/bottom-navigation"); -%>
-    
+
     <!-- end of bottom navigation -->
     <div class="container-fluid main">
       <div class="d-flex justify-content-between align-items-center">
@@ -39,7 +39,7 @@
                   <div><img src="../assets/images/icon-search.svg" alt=""></div>
                 </div>
                 <div class="navbtn nav-tabs" id="myTab" role="tablist">
-                  <div class="notify action" id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal-tab-pane"
+                  <div class="notify action active" id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal-tab-pane"
                     type="button" role="tab" aria-controls="personal-tab-pane" aria-selected="true">個人通知</div>
                   <div class="notify" id="system-tab" data-bs-toggle="tab" data-bs-target="#system-tab-pane"
                     type="button" role="tab" aria-controls="system-tab-pane" aria-selected="false">系統通知</div>
@@ -119,6 +119,8 @@
               </div>
               <div class="modal-body">
                 Hide this modal and show the first with the button below.
+                <div class="next" data-bs-target="#exampleModalToggle1-2" data-bs-toggle="modal"><img src="../assets/images/icon-arrow-right.svg" alt=""></div>
+                <!-- <div class="prev"><img src="../assets/images/icon-arrow-left.svg" alt=""></div> -->
               </div>
               <div class="modal-footer">
                 <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
@@ -137,6 +139,8 @@
               </div>
               <div class="modal-body">
                 Hide this modal and show the first with the button below.
+                <div class="next" data-bs-target="#exampleModalToggle1-3" data-bs-toggle="modal"><img src="../assets/images/icon-arrow-right.svg" alt=""></div>
+                <div class="prev" data-bs-target="#exampleModalToggle1-1" data-bs-toggle="modal"><img src="../assets/images/icon-arrow-left.svg" alt=""></div>
               </div>
               <div class="modal-footer">
                 <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
@@ -155,6 +159,8 @@
               </div>
               <div class="modal-body">
                 Hide this modal and show the first with the button below.
+                <div class="next" data-bs-target="#exampleModalToggle1-4" data-bs-toggle="modal"><img src="../assets/images/icon-arrow-right.svg" alt=""></div>
+                <div class="prev" data-bs-target="#exampleModalToggle1-2" data-bs-toggle="modal"><img src="../assets/images/icon-arrow-left.svg" alt=""></div>
               </div>
               <div class="modal-footer">
                 <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
@@ -173,6 +179,8 @@
               </div>
               <div class="modal-body">
                 Hide this modal and show the first with the button below.
+                <!-- <div class="next" data-bs-target="#exampleModalToggle1-5" data-bs-toggle="modal"><img src="../assets/images/icon-arrow-right.svg" alt=""></div> -->
+                <div class="prev" data-bs-target="#exampleModalToggle1-3" data-bs-toggle="modal"><img src="../assets/images/icon-arrow-left.svg" alt=""></div>
               </div>
               <div class="modal-footer">
                 <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
@@ -308,8 +316,10 @@
       });
     </script>
     <script>
-      $("footer a:eq(1)").css({
-        "color": "#6CAA7A !important"
+      $(document).ready(function () {
+        $("#footer a:eq(1)").css({
+          "color": "#6CAA7A !important"
+        });
       });
     </script>
     <div class="container-fluid no-record">
