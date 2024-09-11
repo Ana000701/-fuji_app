@@ -1,3 +1,6 @@
+body{
+  font-family: "Noto Sans TC";
+}
 .bi{
   font-size: 26px;
   line-height: 1.2;
@@ -60,4 +63,120 @@
   line-height: 1.4;
   font-weight: 700;
   color: #101828;
+}
+// .modal1{
+  // width: 375px;
+  // margin: 0  auto ;
+
+// }
+.modal1::-webkit-scrollbar {
+  width: 0;  /* 設置捲軸的寬度 */
+  background-color: transparent;  /* 背景設為透明 */
+}
+
+.modal1::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0); /* 捲軸的滑塊設置為透明 */
+  border-radius: 0;  /* 滑塊圓角 */
+}
+
+.modal1::-webkit-scrollbar-track {
+  background-color: transparent;  /* 滑軌設置為透明 */
+}
+.modal1 .modal-dialog{
+  width: 375px;
+  margin: 0 auto;
+}
+.modal1 .modal-content{
+  height: 100vh;
+  border-radius: 0;
+  border-width: 0;
+}
+.modal1 .modal-body{
+  padding: 0;
+}
+.navbtn{
+  background: #F2F4F7;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  margin: 16px;
+  font-weight: 700;
+  color: #98A2B3;
+}
+.navbtn .notify{
+  cursor: pointer;
+  border-radius: 16px;
+  text-align: center;
+  padding: 4px;
+  width: 50%;
+}
+.navbtn .notify.action{
+  background: $primary-400;
+}
+.tab-content{
+  margin: 24px 16px;
+}
+.notification{
+  display: flex;
+  justify-content: space-between;
+  margin: 16px;
+  font-weight: 700;
+  color: #101828;
+  font-size: 20px;
+}
+.no-record{
+  text-align: center;
+  border-top: 1px solid #E4E7EC;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  color: #475467;
+  font-weight: 400;
+  margin-top: 19px;
+  padding-top: 19px;
+  font-size: 14px;
+}
+.modal1 ul{
+  padding: 0;
+}
+.modal1 ul li{
+  padding-left: 2rem;
+  border-bottom: 1px solid #E4E7EC;
+}
+.modal1 ul li.new{
+  position: relative;
+}
+.modal1 ul li.new::before{
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  background: #F1B358;
+  border-radius: 50%;
+}
+.message{
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-weight: 400;
+  color: #1D2939;
+}
+.share{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+.share-use{
+  color: #475467;
+}
+.share-date{
+  
+  color: #667085;
+  font-weight: 400;
 }
