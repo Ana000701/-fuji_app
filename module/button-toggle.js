@@ -11,22 +11,25 @@ categoryItem.forEach((item) => {
 
 // partner
 const partnerBtn = document.querySelector(".partner-btn");
-const partnerSelectName = document.querySelector(".partner-select-name");
+const partnerSelectName = document.querySelectorAll(".partner-select-name");
 const partnerItem = document.querySelectorAll(".partner-item");
 const partner2Item = document.querySelectorAll(".partner2-item");
 const partnerName = document.querySelector(".partner-name");
 const partnerImage = document.querySelector(".partner-image");
 const submitBtn = document.querySelector(".submit-btn");
+const submit = document.querySelector(".submit");
 // 第一次選取共同支付者
 partnerItem.forEach((item) => {
   item.addEventListener("click", () => {
-    partnerSelectName.innerText = item.children[1].innerText;
+    partnerSelectName[0].innerText = item.children[1].innerText;
+    partnerSelectName[1].innerText = item.children[1].innerText;
     partnerName.innerText = item.children[1].innerText;
     partnerImage.src = `../public/images/${partnerName.innerText}.svg`;
     partnerCollapse.style.display = "block";
     partnerBtn.style.display = "none";
     submitBtn.style.color = "white";
     submitBtn.style.backgroundColor = "#EC9427";
+    submit.action = "finished.html";
   });
 });
 // 修改共同支付者
@@ -46,6 +49,7 @@ collapseCancelBtn.addEventListener("click", () => {
   partnerBtn.style.display = "block";
   submitBtn.style.color = "#98A2B3";
   submitBtn.style.backgroundColor = "#E4E7EC";
+  submit.action = "";
 });
 // 輸入金額
 const price = document.querySelector("#price");
@@ -165,11 +169,27 @@ frequency2Item.forEach((item) => {
   });
 });
 
-// character
+// 心情人物
 const characterItem = document.querySelectorAll(".character-item");
 const characterSelectName = document.querySelector(".character-select-name");
+const messageImage = document.querySelector(".message-image");
 characterItem.forEach((item) => {
   item.addEventListener("click", () => {
     characterSelectName.innerText = item.children[0].innerText;
+    messageImage.src = `../public/images/${item.children[1].alt}.svg`;
   });
+});
+
+// 費用名稱
+const name = document.querySelector("#name");
+const billName = document.querySelector(".bill-name");
+name.addEventListener("input", function () {
+  billName.innerText = this.value;
+});
+
+// 留言內容
+const message = document.querySelector("#message");
+const messageResult = document.querySelector(".message-input");
+message.addEventListener("input", function () {
+  messageResult.innerText = this.value;
 });

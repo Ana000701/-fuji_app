@@ -106,13 +106,23 @@
       align-items: center;
       justify-content: center;
       margin-bottom: 16px;
+      color: $gray-800;
       border: 1px solid $gray-200;
       border-radius: 8px;
+      cursor: pointer;
+      &:hover,
+      &:focus-visible {
+        color: $primary-400;
+        border: 1px solid $primary-400;
+        filter: brightness(0) saturate(100%) invert(70%) sepia(94%)
+          saturate(2014%) hue-rotate(342deg) brightness(97%) contrast(91%);
+      }
     }
     .category-image {
       width: 32px;
       height: 32px;
       margin-bottom: 4px;
+      filter: none;
     }
   }
 }
@@ -140,6 +150,7 @@
   }
   .partner-item {
     border-top: 1px solid $gray-100;
+    cursor: pointer;
     &:last-child {
       border-bottom: 1px solid $gray-100;
     }
@@ -170,8 +181,9 @@
       @include modal-header-ver1-btn-close;
     }
   }
-  .partner-item {
+  .partner2-item {
     border-top: 1px solid $gray-100;
+    cursor: pointer;
     &:last-child {
       border-bottom: 1px solid $gray-100;
     }
@@ -216,6 +228,7 @@
     }
     .apportionment-item {
       border-top: 1px solid $gray-100;
+      cursor: pointer;
       &:last-child {
         border-bottom: 1px solid $gray-100;
       }
@@ -316,6 +329,7 @@
   }
   .frequency-item {
     border-top: 1px solid $gray-100;
+    cursor: pointer;
     &:last-child {
       border-bottom: 1px solid $gray-100;
     }
@@ -434,6 +448,7 @@
   }
   .frequency-item {
     border-top: 1px solid $gray-100;
+    cursor: pointer;
     &:last-child {
       border-bottom: 1px solid $gray-100;
     }
@@ -466,6 +481,7 @@
     margin-bottom: 16px;
     border-radius: 8px;
     border: 1px solid $gray-200;
+    cursor: pointer;
   }
 }
 // 留言
@@ -519,6 +535,27 @@
       padding: 0;
     }
   }
+  .mind-tag {
+    color: $secondary-600;
+    background-color: $secondary-100;
+    border: 1px solid $secondary-200;
+    border-radius: 80px;
+  }
+  .confirm-btn {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: white;
+    background-color: $primary-400;
+    padding: 12px 16px;
+    outline: none;
+    border: none;
+    border-radius: 32px;
+    &:focus-visible {
+      outline: none;
+    }
+  }
 }
 // 備註
 #remark,
@@ -567,4 +604,9 @@
   background-color: $gray-200;
   border: 1px solid $gray-200;
   border-radius: 32px;
+}
+
+// finished
+.finished-image {
+  margin-bottom: 80px;
 }
