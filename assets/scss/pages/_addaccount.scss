@@ -475,6 +475,7 @@
       @include modal-header-ver1-btn-close;
     }
   }
+
   .character-item {
     padding-left: 16px;
     padding-right: 10px;
@@ -483,6 +484,20 @@
     border: 1px solid $gray-200;
     cursor: pointer;
   }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
 }
 // 留言
 // 留言 btn
