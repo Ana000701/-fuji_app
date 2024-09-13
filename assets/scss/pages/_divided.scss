@@ -1,0 +1,124 @@
+.navbtn {
+  background: $gray-100;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  margin: 16px;
+  font-weight: 700;
+
+  .funds {
+    cursor: pointer;
+    border-radius: 16px;
+    text-align: center;
+    padding: 4px;
+    width: 33.33333%;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 700;
+    border: none;
+    color: $gray-400;
+
+    &.action {
+      background: $primary-400;
+      color: $white;
+    }
+  }
+}
+a.navbtn .funds {
+  color: inherit !important;
+}
+.divied-tab-content.tab-content {
+  margin: 24px 0 !important;
+}
+
+.tab-pane {
+  color: $gray-800 !important;
+}
+
+.Collect-tab-pane {
+  border: none;
+}
+
+.tab-pane .amount {
+  color: $secondary-400;
+  font-weight: 700;
+}
+
+.title-divided {
+  color: $gray-800;
+  font-size: 24px;
+  line-height: 1.175;
+  margin: 22.5px 16px;
+  font-weight: 700;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  color: $gray-800;
+
+  .increase {
+    font-size: 20px;
+    line-height: 1.2;
+    color: $secondary-400;
+  }
+
+  .reduce {
+    font-size: 20px;
+    line-height: 1.2;
+    color: $primary-600;
+  }
+}
+.finish-box{
+  margin: 16px;
+}
+.date-of-month{
+  text-align: right;
+  border-right: 1px solid #E4E7EC;
+  padding: 4px 8px 4px 0px;
+  width: 60px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #1D2939;
+}
+.date-month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center !important;
+
+  > {
+    :nth-child(1) {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    div > .repeat span {
+      display: inline-block;
+      color: #1D2939;
+      background: #F1F9F3;
+      padding: 2px 8px;
+      margin: 0 8px 6px;
+      font-size: 12px;
+      line-height: 1.6;
+      border-radius: 8px;
+    }
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+    margin: 0 8px;
+  }
+}
+
+.the-month {
+  padding: 16px 0px;
+  margin: 0 16px 16px;
+  border: 1px solid #E6E6E6;
+  border-radius: 8px;
+}

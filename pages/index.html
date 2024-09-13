@@ -27,14 +27,14 @@
         <div data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
           <img src="../assets/images/icon-bell.svg">
         </div>
+        <!-- 通知modal -->
         <div class="modal modal1" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
           tabindex="-1">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-body">
                 <div class="notification">
-                  <div data-bs-dismiss="modal" aria-label="Close"><img src="../assets/images/icon-arrow-left.svg"
-                     ></div>
+                  <div data-bs-dismiss="modal" aria-label="Close"><img src="../assets/images/icon-arrow-left.svg"></div>
                   <div>通知中心</div>
                   <div><img src="../assets/images/icon-search.svg"></div>
                 </div>
@@ -116,7 +116,7 @@
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalToggleLabel1-1">Modal 1-1</h1>
+                <!-- <h1 class="modal-title fs-5" id="exampleModalToggleLabel1-1">Modal 1-1</h1> -->
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body text-center">
@@ -147,7 +147,7 @@
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalToggleLabel1-2">Modal 1-2</h1>
+                <!-- <h1 class="modal-title fs-5" id="exampleModalToggleLabel1-2">Modal 1-2</h1> -->
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body text-center">
@@ -181,20 +181,31 @@
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalToggleLabel1-3">Modal 1-3</h1>
+                <!-- <h1 class="modal-title fs-5" id="exampleModalToggleLabel1-3">Modal 1-3</h1> -->
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="modal-body">
-                Hide this modal and show the first with the button below.
+              <div class="modal-body text-center">
+                <img class="img-fluid" src="../assets/images/people-1-lg.svg">
+                <div class="not-yet">
+                  <div>
+                    <img src="../assets/images/icon-rabbit.svg">
+                  </div>
+                  <span>Yuki</span><span>還沒收到</span><span class="cost-title">醫療長照費</span>
+                </div>
+                <div class="feeling">
+                  <span>感到懊惱 😖</span><span>yoyoyo, 這首歌沒有cash我唱不完 </span>
+                </div>
+                <div class="see-cost" data-bs-target="#exampleModalToggle3-1" data-bs-toggle="modal">看款項</div>
                 <div class="next" data-bs-target="#exampleModalToggle1-4" data-bs-toggle="modal"><img
                     src="../assets/images/icon-arrow-right.svg"></div>
                 <div class="prev" data-bs-target="#exampleModalToggle1-2" data-bs-toggle="modal"><img
                     src="../assets/images/icon-arrow-left.svg"></div>
+                <!-- <div class="prev"><img src="../assets/images/icon-arrow-left.svg"></div> -->
               </div>
-              <div class="modal-footer">
+              <!-- <div class="modal-footer">
                 <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
                   first</button>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -203,19 +214,31 @@
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalToggleLabel1-4">Modal 1-4</h1>
+                <!-- <h1 class="modal-title fs-5" id="exampleModalToggleLabel1-4">Modal 1-4</h1> -->
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="modal-body">
-                Hide this modal and show the first with the button below.
-                <!-- <div class="next" data-bs-target="#exampleModalToggle1-5" data-bs-toggle="modal"><img src="../assets/images/icon-arrow-right.svg"></div> -->
+              <div class="modal-body text-center">
+                <img class="img-fluid" src="../assets/images/five-high.svg">
+                <div class="not-yet">
+                  <div>
+                    <img src="../assets/images/mina.svg">
+                  </div>
+                  <span>Mina</span><span>已支付</span><span class="cost-title">醫療長照費</span>
+                </div>
+                <div class="feeling">
+                  <span>感到得意😊</span><span>晚餐加一隻雞腿</span>
+                  <hr>
+                  <span>轉出帳號：(812) 2888-10-XXXX-XXXX</span>
+                </div>
+                <div class="see-cost" data-bs-target="#exampleModalToggle3-1" data-bs-toggle="modal">看款項</div>
                 <div class="prev" data-bs-target="#exampleModalToggle1-3" data-bs-toggle="modal"><img
                     src="../assets/images/icon-arrow-left.svg"></div>
               </div>
-              <div class="modal-footer">
+              <!-- <div class="modal-footer">
                 <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
                   first</button>
-              </div>
+              </div> -->
+
             </div>
           </div>
         </div>
@@ -292,56 +315,107 @@
               <div class="modal-body">
                 <div class="ledger">
                   <div class="share-date">2024.07.20</div>
-                    <div class="details">
-                      <div class="details-title">
-                        <img src="../assets/images/food.svg">
-                        <span>午餐錢</span>
-                      </div>
-                      <div class="details-price">
-                        <span>250</span> <span>元</span>
-                      </div>
+                  <div class="details">
+                    <div class="details-title">
+                      <img src="../assets/images/food.svg">
+                      <span>午餐錢</span>
                     </div>
-                    <hr class="hr">
-                    <div class="passbook">轉入帳號：(812)2888-10-XXXX-XXXXX</div>
-                    <div class="check" data-bs-target="#exampleModalToggle4-1" data-bs-toggle="modal">確認收款</div>
+                    <div class="details-price">
+                      <span>250</span> <span>元</span>
+                    </div>
+                  </div>
+                  <hr class="hr">
+                  <div class="passbook">轉入帳號：(812)2888-10-XXXX-XXXXX</div>
+                  <div class="check" data-bs-target="#exampleModalToggle4-1" data-bs-toggle="modal">確認收款</div>
                 </div>
                 <div class="ledger">
-                  <div>include Ana寫過區塊</div>
+                  <div class="d-flex justify-content-between">
+                    <div>金額</div>
+                    <div><b>500</b> <span>元</span></div>
+                  </div>
+                  <hr class="hr">
+                  <div class="d-flex justify-content-between">
+                    <div>付款者</div>
+                    <div>Yuki</div>
+                  </div>
+                  <hr class="hr">
+                  <div class="d-flex justify-content-between">
+                    <div>分攤方式</div>
+                    <div class="">平均分攤</div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <div>
+                      <img src="../assets/images/yuki.svg">
+                      <span>Yuki</span>
+                    </div>
+                    <div>
+                      <b>250</b> <span>元</span>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <div>
+                      <img src="../assets/images/una.svg">
+                      <span>Una</span>
+                    </div>
+                    <div>
+                      <b>250</b> <span>元</span>
+                    </div>
+                  </div>
+                  <hr class="hr">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      自動重複
+                    </div>
+                    <div>
+                      每月
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between mt-3">
+                    <div>
+                      提醒對方
+                    </div>
+                    <div>
+                      每周
+                    </div>
+                  </div>
+                  <hr class="hr">
+                  <div>留言文字</div>
+                  <textarea class="textarea mt-3" disabled>肉燥麵 + 手搖
+                    </textarea>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <!-- double check -->
-         <div class="modal modal2 fade" id="exampleModalToggle4-1" aria-hidden="true"
-         aria-labelledby="exampleModalToggleLabel4-1" tabindex="-1">
-         <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header close">
-              <div class="circle-icon" data-bs-target="#exampleModalToggle3-1" data-bs-toggle="modal">
-                <img class="img-fluid" src="../assets/images/icon-cancel.svg">
+        <div class="modal modal2 fade" id="exampleModalToggle4-1" aria-hidden="true"
+          aria-labelledby="exampleModalToggleLabel4-1" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header close">
+                <div class="circle-icon" data-bs-target="#exampleModalToggle3-1" data-bs-toggle="modal">
+                  <img class="img-fluid" src="../assets/images/icon-cancel.svg">
+                </div>
               </div>
-            </div>
-            <div class="modal-body contain">
-             <div class="not-yet">
-               <span>已確認收到</span><span>Mina</span><span>的款項</span>
-             </div>
-             <div class="contain-text">完成收款確認後不得變更</div>
-            </div>
-            <div class="modal-footer checkbox">
-              <a class="check" href="divided.html">我已收到帳款</a>
-              <div class="check" data-bs-target="#exampleModalToggle3-1" data-bs-toggle="modal">取消</div>
+              <div class="modal-body contain">
+                <div class="not-yet">
+                  <span>已確認收到</span><span>Mina</span><span>的款項</span>
+                </div>
+                <div class="contain-text">完成收款確認後不得變更</div>
+              </div>
+              <div class="modal-footer checkbox">
+                <a class="check" href="divided.html#Finish-tab-pane">我已收到帳款</a>
+                <a class="check" href="divided.html#Collect-tab-pane">取消</a>
+              </div>
             </div>
           </div>
         </div>
-         </div>
         <div>
           <select id="disabledSelect" class="form-select">
             <option>2024年9月</option>
           </select>
         </div>
         <img src="../assets/images/icon-info.svg">
-
       </div>
       <div class="day">
         <div class="week">週日</div>
