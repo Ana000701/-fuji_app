@@ -14,3 +14,9 @@ ol {
   max-width: 375px;
   margin: 0 auto;
 }
+footer .container-fluid{
+  padding: 8px 0;
+  border-top: 1px solid $gray-100;
+  background: $white;
+  z-index: 10;
+}
