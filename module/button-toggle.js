@@ -177,7 +177,7 @@ const messageImage = document.querySelector(".message-image");
 characterItem.forEach((item) => {
   item.addEventListener("click", () => {
     characterSelectName.innerText = item.children[0].innerText;
-    messageImage.src = `../public/images/${item.children[1].alt}.svg`;
+    messageImage.src = `/fuji_app/images/${item.children[1].alt}.svg`;
   });
 });
 
