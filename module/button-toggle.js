@@ -38,7 +38,7 @@ partner2Item.forEach((item) => {
     partnerSelectName[0].innerText = item.children[1].innerText;
     partnerSelectName[1].innerText = item.children[1].innerText;
     partnerName.innerText = item.children[1].innerText;
-    partnerImage.src = `../public/images/${partnerName.innerText}.svg`;
+    partnerImage.src = `fuji_app/images/${partnerName.innerText}.svg`;
   });
 });
 
