@@ -35,7 +35,8 @@ partnerItem.forEach((item) => {
 // 修改共同支付者
 partner2Item.forEach((item) => {
   item.addEventListener("click", () => {
-    partnerSelectName.innerText = item.children[1].innerText;
+    partnerSelectName[0].innerText = item.children[1].innerText;
+    partnerSelectName[1].innerText = item.children[1].innerText;
     partnerName.innerText = item.children[1].innerText;
     partnerImage.src = `../public/images/${partnerName.innerText}.svg`;
   });

@@ -80,6 +80,7 @@
   .modal-dialog {
     @include modal-dialog-ver1;
   }
+
   .modal-content {
     @include modal-content-ver1;
   }
@@ -606,10 +607,10 @@
 }
 
 // modal 共用位移：由下往上出現
-.modal.fade .modal-dialog {
+.modal3.fade .modal-dialog {
   @include fade-modal-dialog-ver1;
 }
-.modal.show .modal-dialog {
+.modal3.show .modal-dialog {
   @include show-modal-dialog-ver1;
 }
 
