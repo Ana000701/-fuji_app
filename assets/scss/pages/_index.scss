@@ -454,3 +454,30 @@ body {
   font-weight: 400;
   color: $gray-400;
 }
+.fixed-fluid{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: $white;
+  box-shadow: 0 0 15px #0001;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary-400;
+  font-weight: 700;
+  flex-flow: column;
+}
+.hidden{
+  animation:  .5s 1s  1 ease into;
+}
+@keyframes into{
+0%{
+  opacity: 1;
+}
+100%{
+  opacity: 0;
+}
+}

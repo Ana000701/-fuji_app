@@ -761,7 +761,21 @@
         <img src="../assets/images/icon-plus-primary.svg" /> 新增一筆
       </p>
     </div>
-
+    <div class="container-fluid fixed-fluid" id="into">
+      <img src="../assets/images/logo.svg">
+      <h3>富吉</h3>
+    </div>
+    <script>
+      window.onload = function() {
+        setTimeout(function() {
+        var element = document.getElementById('into');
+        element.classList.add('hidden');
+        element.addEventListener('animationend', function() {
+          document.getElementById('into').style.display = 'none';
+        });
+      }, 500);
+      }
+    </script>
     <!-- vite -->
     <script type="module" src="../main.js"></script>
   </body>
