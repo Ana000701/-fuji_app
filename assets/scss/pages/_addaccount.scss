@@ -254,7 +254,10 @@
 }
 // 重複扣款
 .repeat-payment {
-  transition: all 0.5s ease-in;
+  padding-left: 16px;
+  padding-right: 16px;
+  transition: padding-top, padding-bottom, border, border-radius,
+    box-shadow 0.5s linear;
   #repeat-payment-btn {
     position: relative;
     width: 49px;
@@ -378,7 +381,10 @@
 }
 // 自動還款提醒
 .repayment-reminder {
-  transition: all 0.5s;
+  padding-left: 16px;
+  padding-right: 16px;
+  transition: padding-top, padding-bottom, border, border-radius,
+    box-shadow 0.5s linear;
   #repayment-reminder-btn {
     position: relative;
     width: 49px;
@@ -593,7 +599,8 @@
 
 // 重複扣款、自動還款提醒共用展開效果
 .showStyle {
-  padding: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   border: 1px solid $primary-200;
   border-radius: 16px;
   box-shadow: 0px 4px 8px -2px #0000001a;
