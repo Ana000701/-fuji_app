@@ -9,8 +9,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <script type="module" crossorigin src="/fuji_app/assets/main-0c456a2b.js"></script>
-    <link rel="stylesheet" href="/fuji_app/assets/main-fbd1bc01.css">
+    <script type="module" crossorigin src="/fuji_app/assets/main-04650bf1.js"></script>
+    <link rel="stylesheet" href="/fuji_app/assets/main-4466dcbb.css">
   </head>
   <body>
     <header class="header-box-shadow">
@@ -60,190 +60,188 @@
               </button>
             </li>
           </ul>
-          <div class="tab-content m-0" id="pills-tabContent">
-            <div
-              class="tab-pane fade show active"
-              id="add-bill"
-              role="tabpanel"
-              aria-labelledby="add-bill-tab"
-              tabindex="0"
-            >
-              <!-- bill details -->
-              <form class="py-2 my-4">
-                <!-- date picker -->
-                <div class="mb-4">
-                  <button type="button" id="today">
-                    <p class="today-date fs-6 fw-normal lh-lg">2024/07/21</p>
-                    <img
-                      src="/fuji_app/assets/icon-calendar-a987f6a6.svg"
-                      alt="icon-calendar"
-                    />
-                  </button>
-                </div>
-                <!-- end of date picker -->
+        </div>
+        <div class="tab-content m-0" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="add-bill"
+            role="tabpanel"
+            aria-labelledby="add-bill-tab"
+            tabindex="0"
+          >
+            <!-- bill details -->
+            <form class="py-2 my-4 container-fluid">
+              <!-- date picker -->
+              <div class="mb-4">
+                <button type="button" id="today">
+                  <p class="today-date fs-6 fw-normal lh-lg">2024/07/21</p>
+                  <img
+                    src="/fuji_app/assets/icon-calendar-a987f6a6.svg"
+                    alt="icon-calendar"
+                  />
+                </button>
+              </div>
+              <!-- end of date picker -->
 
-                <!-- category -->
-                <div
-                  class="category-btn d-flex justify-content-between align-items-center mb-4"
+              <!-- category -->
+              <div
+                class="category-btn d-flex justify-content-between align-items-center mb-4"
+              >
+                <label for="category" class="text-gray-800 fs-6 fw-normal lh-lg"
+                  >類別</label
                 >
-                  <label
-                    for="category"
-                    class="text-gray-800 fs-6 fw-normal lh-lg"
-                    >類別</label
-                  >
-                  <!-- category button -->
-                  <button
-                    type="button"
-                    class="d-flex justify-content-between align-items-center ps-0 pe-4 py-2"
-                    data-bs-toggle="modal"
-                    data-bs-target="#categoryModal"
-                    id="category"
-                  >
-                    <p class="category-name fs-6 fw-normal lh-lg">請選擇類別</p>
-                    <img
-                      src="/fuji_app/assets/icon-arrow-down-822f6488.svg"
-                      alt="icon-arrow-down"
-                    />
-                  </button>
-                  <!-- end of category button -->
+                <!-- category button -->
+                <button
+                  type="button"
+                  class="d-flex justify-content-between align-items-center ps-0 pe-4 py-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#categoryModal"
+                  id="category"
+                >
+                  <p class="category-name fs-6 fw-normal lh-lg">請選擇類別</p>
+                  <img
+                    src="/fuji_app/assets/icon-arrow-down-822f6488.svg"
+                    alt="icon-arrow-down"
+                  />
+                </button>
+                <!-- end of category button -->
 
-                  <!-- category modal -->
-                  <div
-                    class="modal fade modal3"
-                    id="categoryModal"
-                    tabindex="-1"
-                    aria-labelledby="categoryModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog mx-0">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <p class="text-gray-800 fs-6 fw-bold lh-xs">
-                            選擇類別
-                          </p>
-                          <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                          ></button>
+                <!-- category modal -->
+                <div
+                  class="modal fade modal3"
+                  id="categoryModal"
+                  tabindex="-1"
+                  aria-labelledby="categoryModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog mx-0">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <p class="text-gray-800 fs-6 fw-bold lh-xs">選擇類別</p>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body p-0" data-bs-dismiss="modal">
+                        <div class="d-flex flex-column category-item">
+                          <img
+                            src="/fuji_app/assets/food-9810dc77.svg"
+                            alt="food"
+                            class="category-image"
+                          />
+                          <p class="fs-5 fw-bold lh-lg">飲食</p>
                         </div>
-                        <div class="modal-body p-0" data-bs-dismiss="modal">
-                          <div class="d-flex flex-column category-item">
-                            <img
-                              src="/fuji_app/assets/food-9810dc77.svg"
-                              alt="food"
-                              class="category-image"
-                            />
-                            <p class="fs-5 fw-bold lh-lg">飲食</p>
-                          </div>
-                          <div class="d-flex flex-column category-item">
-                            <img
-                              src="/fuji_app/assets/shopping-cart-eebd399c.svg"
-                              alt="shopping-cart"
-                              class="category-image"
-                            />
-                            <p class="fs-5 fw-bold lh-lg">購物</p>
-                          </div>
-                          <div class="d-flex flex-column category-item">
-                            <img
-                              src="/fuji_app/assets/bus-d144d1dc.svg"
-                              alt="bus"
-                              class="category-image"
-                            />
-                            <p class="fs-5 fw-bold lh-lg">交通</p>
-                          </div>
-                          <div class="d-flex flex-column category-item">
-                            <img
-                              src="/fuji_app/assets/game-console-8196a608.svg"
-                              alt="game-console"
-                              class="category-image"
-                            />
-                            <p class="fs-5 fw-bold lh-lg">娛樂</p>
-                          </div>
-                          <div class="d-flex flex-column category-item">
-                            <img
-                              src="/fuji_app/assets/airplane-7d50ee89.svg"
-                              alt="airplane"
-                              class="category-image"
-                            />
-                            <p class="fs-5 fw-bold lh-lg">旅遊</p>
-                          </div>
-                          <div class="d-flex flex-column category-item">
-                            <img
-                              src="/fuji_app/assets/medical-5947c2af.svg"
-                              alt="medical"
-                              class="category-image"
-                            />
-                            <p class="fs-5 fw-bold lh-lg">醫療</p>
-                          </div>
-                          <div class="d-flex flex-column category-item">
-                            <img
-                              src="/fuji_app/assets/reading-a7b5b425.svg"
-                              alt="reading"
-                              class="category-image"
-                            />
-                            <p class="fs-5 fw-bold lh-lg">學習</p>
-                          </div>
-                          <div class="d-flex flex-column category-item">
-                            <img
-                              src="/fuji_app/assets/home-f4c0da0a.svg"
-                              alt="home"
-                              class="category-image"
-                            />
-                            <p class="fs-5 fw-bold lh-lg">家居</p>
-                          </div>
-                          <div class="d-flex flex-column category-item">
-                            <img
-                              src="/fuji_app/assets/price-tag-1addb96e.svg"
-                              alt="price-tag"
-                              class="category-image"
-                            />
-                            <p class="fs-5 fw-bold lh-lg">其他</p>
-                          </div>
+                        <div class="d-flex flex-column category-item">
+                          <img
+                            src="/fuji_app/assets/shopping-cart-eebd399c.svg"
+                            alt="shopping-cart"
+                            class="category-image"
+                          />
+                          <p class="fs-5 fw-bold lh-lg">購物</p>
+                        </div>
+                        <div class="d-flex flex-column category-item">
+                          <img
+                            src="/fuji_app/assets/bus-d144d1dc.svg"
+                            alt="bus"
+                            class="category-image"
+                          />
+                          <p class="fs-5 fw-bold lh-lg">交通</p>
+                        </div>
+                        <div class="d-flex flex-column category-item">
+                          <img
+                            src="/fuji_app/assets/game-console-8196a608.svg"
+                            alt="game-console"
+                            class="category-image"
+                          />
+                          <p class="fs-5 fw-bold lh-lg">娛樂</p>
+                        </div>
+                        <div class="d-flex flex-column category-item">
+                          <img
+                            src="/fuji_app/assets/airplane-7d50ee89.svg"
+                            alt="airplane"
+                            class="category-image"
+                          />
+                          <p class="fs-5 fw-bold lh-lg">旅遊</p>
+                        </div>
+                        <div class="d-flex flex-column category-item">
+                          <img
+                            src="/fuji_app/assets/medical-5947c2af.svg"
+                            alt="medical"
+                            class="category-image"
+                          />
+                          <p class="fs-5 fw-bold lh-lg">醫療</p>
+                        </div>
+                        <div class="d-flex flex-column category-item">
+                          <img
+                            src="/fuji_app/assets/reading-a7b5b425.svg"
+                            alt="reading"
+                            class="category-image"
+                          />
+                          <p class="fs-5 fw-bold lh-lg">學習</p>
+                        </div>
+                        <div class="d-flex flex-column category-item">
+                          <img
+                            src="/fuji_app/assets/home-f4c0da0a.svg"
+                            alt="home"
+                            class="category-image"
+                          />
+                          <p class="fs-5 fw-bold lh-lg">家居</p>
+                        </div>
+                        <div class="d-flex flex-column category-item">
+                          <img
+                            src="/fuji_app/assets/price-tag-1addb96e.svg"
+                            alt="price-tag"
+                            class="category-image"
+                          />
+                          <p class="fs-5 fw-bold lh-lg">其他</p>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!-- end of category modal -->
                 </div>
-                <!-- end of category -->
+                <!-- end of category modal -->
+              </div>
+              <!-- end of category -->
 
-                <!-- name -->
-                <div
-                  class="d-flex justify-content-between align-items-center mb-4"
+              <!-- name -->
+              <div
+                class="d-flex justify-content-between align-items-center mb-4"
+              >
+                <label for="name" class="text-gray-800 fs-6 fw-normal lh-lg"
+                  >名稱</label
                 >
-                  <label for="name" class="text-gray-800 fs-6 fw-normal lh-lg"
-                    >名稱</label
-                  >
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="請輸入名稱"
-                    class="py-2"
-                  />
-                </div>
-                <!-- end of name -->
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="請輸入名稱"
+                  class="py-2"
+                />
+              </div>
+              <!-- end of name -->
 
-                <!-- price -->
-                <div class="d-flex justify-content-between align-items-center">
-                  <label for="price" class="text-gray-800 fs-6 fw-normal lh-lg"
-                    >金額</label
-                  >
-                  <input
-                    type="text"
-                    name="price"
-                    id="price"
-                    placeholder="請輸入金額"
-                    class="py-2"
-                  />
-                </div>
-                <!-- end of price -->
-              </form>
-              <!-- end of bill details -->
+              <!-- price -->
+              <div class="d-flex justify-content-between align-items-center">
+                <label for="price" class="text-gray-800 fs-6 fw-normal lh-lg"
+                  >金額</label
+                >
+                <input
+                  type="text"
+                  name="price"
+                  id="price"
+                  placeholder="請輸入金額"
+                  class="py-2"
+                />
+              </div>
+              <!-- end of price -->
+            </form>
+            <!-- end of bill details -->
 
-              <!-- partner -->
+            <!-- partner -->
+            <div class="px-1">
               <div
                 class="partner-btn border border-1 border-primary-200 rounded-3 p-4 mb-4"
               >
@@ -321,9 +319,11 @@
                 </div>
                 <!-- end of partner modal -->
               </div>
-              <!-- end of partner -->
+            </div>
+            <!-- end of partner -->
 
-              <!-- partner collapse-->
+            <!-- partner collapse-->
+            <div class="px-1">
               <div
                 class="partner-collapse border border-1 border-primary-200 rounded-4 p-4 mb-4"
                 style="display: none"
@@ -543,508 +543,506 @@
                 </div>
                 <!--end of 分攤對象 icon -->
               </div>
-              <!-- end of partner collapse -->
+            </div>
+            <!-- end of partner collapse -->
 
-              <div class="py-2 mb-4">
-                <!-- repeat payment -->
-                <div class="repeat-payment mb-4">
-                  <!-- repeat payment button -->
-                  <div
-                    class="d-flex justify-content-between align-items-center mb-4"
+            <div class="py-2 px-1 mb-4">
+              <!-- repeat payment -->
+              <div class="repeat-payment mb-4">
+                <!-- repeat payment button -->
+                <div
+                  class="d-flex justify-content-between align-items-center mb-4"
+                >
+                  <label for="repeat-payment-btn" class="w-80">重複扣款</label>
+                  <button
+                    class="p-0"
+                    id="repeat-payment-btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#repeatPaymentCollapseExample"
+                    aria-expanded="false"
+                    aria-controls="repeatPaymentCollapseExample"
                   >
-                    <label for="repeat-payment-btn" class="w-80"
-                      >重複扣款</label
+                    <div class="handle"></div>
+                  </button>
+                </div>
+                <!-- end of repeat payment button -->
+
+                <!-- repeat payment collapse -->
+                <div class="collapse" id="repeatPaymentCollapseExample">
+                  <!--repeat frequency -->
+                  <div
+                    class="repeat-frequency-btn d-flex justify-content-between align-items-center mb-4"
+                  >
+                    <label
+                      for="frequency"
+                      class="text-gray-800 fs-6 fw-normal lh-lg"
+                      >重複頻率</label
                     >
+                    <!-- repeat frequency button -->
                     <button
-                      class="p-0"
-                      id="repeat-payment-btn"
                       type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#repeatPaymentCollapseExample"
-                      aria-expanded="false"
-                      aria-controls="repeatPaymentCollapseExample"
+                      class="d-flex justify-content-between align-items-center"
+                      data-bs-toggle="modal"
+                      data-bs-target="#frequencyModal"
+                      id="frequency"
                     >
-                      <div class="handle"></div>
-                    </button>
-                  </div>
-                  <!-- end of repeat payment button -->
-
-                  <!-- repeat payment collapse -->
-                  <div class="collapse" id="repeatPaymentCollapseExample">
-                    <!--repeat frequency -->
-                    <div
-                      class="repeat-frequency-btn d-flex justify-content-between align-items-center mb-4"
-                    >
-                      <label
-                        for="frequency"
-                        class="text-gray-800 fs-6 fw-normal lh-lg"
-                        >重複頻率</label
-                      >
-                      <!-- repeat frequency button -->
-                      <button
-                        type="button"
-                        class="d-flex justify-content-between align-items-center"
-                        data-bs-toggle="modal"
-                        data-bs-target="#frequencyModal"
-                        id="frequency"
-                      >
-                        <p class="frequency-select-name fs-6 fw-normal lh-lg">
-                          每週
-                        </p>
-                        <img
-                          src="/fuji_app/assets/icon-arrow-down-822f6488.svg"
-                          alt="icon-arrow-down"
-                        />
-                      </button>
-                      <!-- end of repeat frequency button -->
-                      <!-- repeat frequency modal -->
-                      <div
-                        class="modal fade modal3"
-                        id="frequencyModal"
-                        tabindex="-1"
-                        aria-labelledby="frequencyModalLabel"
-                        aria-hidden="true"
-                      >
-                        <div class="modal-dialog mx-0">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <p class="text-gray-800 fs-4 fw-bold lh-xs">
-                                重複頻率
-                              </p>
-                              <button
-                                type="button"
-                                class="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"
-                              ></button>
-                            </div>
-                            <div class="modal-body p-0" data-bs-dismiss="modal">
-                              <div class="frequency-item py-7">
-                                <p class="text-gray-800 fs-6 fw-normal lh-lg">
-                                  每週
-                                </p>
-                              </div>
-                              <div class="frequency-item py-7">
-                                <p class="text-gray-800 fs-6 fw-normal lh-lg">
-                                  每月
-                                </p>
-                              </div>
-                              <div class="frequency-item py-7">
-                                <p class="text-gray-800 fs-6 fw-normal lh-lg">
-                                  每半年
-                                </p>
-                              </div>
-                              <div class="frequency-item py-7">
-                                <p class="text-gray-800 fs-6 fw-normal lh-lg">
-                                  每一年
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- end of repeat frequency modal -->
-                    </div>
-                    <!-- repeat frequency -->
-
-                    <!-- start date -->
-                    <div
-                      class="d-flex justify-content-between align-items-center mb-4"
-                    >
-                      <label
-                        for="startDate"
-                        class="text-gray-800 fs-6 fw-normal lh-lg"
-                        >開始日期</label
-                      >
-                      <button type="button" id="startDate">
-                        <p class="fs-6 fw-normal lh-lg">2024/07/21</p>
-                        <img
-                          src="/fuji_app/assets/icon-arrow-down-822f6488.svg"
-                          alt="icon-arrow-down"
-                        />
-                      </button>
-                    </div>
-                    <!-- end of start date -->
-
-                    <!-- end date -->
-                    <div
-                      class="d-flex justify-content-between align-items-center mb-4"
-                    >
-                      <label
-                        for="endDate"
-                        class="text-gray-800 fs-6 fw-normal lh-lg"
-                        >結束日期</label
-                      >
-                      <button type="button" id="endDate">
-                        <p class="fs-6 fw-normal lh-lg">無</p>
-                        <svg
-                          width="20"
-                          height="20"
-                          viewBox="0 0 20 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M3.72456 6.64155C3.94645 6.41967 4.29367 6.39949 4.53835 6.58104L4.60845 6.64155L9.99984 12.0327L15.3912 6.64155C15.6131 6.41967 15.9603 6.39949 16.205 6.58104L16.2751 6.64155C16.497 6.86344 16.5172 7.21066 16.3356 7.45534L16.2751 7.52544L10.4418 13.3588C10.2199 13.5807 9.87267 13.6008 9.62799 13.4193L9.5579 13.3588L3.72456 7.52544C3.48048 7.28136 3.48048 6.88563 3.72456 6.64155Z"
-                            fill="#98A2B3"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                    <!-- end of end date -->
-
-                    <!-- endDate disabled checkbox -->
-                    <form class="endDate-disabled-checkbox">
-                      <input
-                        type="checkbox"
-                        id="endDate-disabled-btn"
-                        autocomplete="off"
+                      <p class="frequency-select-name fs-6 fw-normal lh-lg">
+                        每週
+                      </p>
+                      <img
+                        src="/fuji_app/assets/icon-arrow-down-822f6488.svg"
+                        alt="icon-arrow-down"
                       />
-                      <label
-                        for="endDate-disabled-btn"
-                        class="text-gray-800 fs-7 fw-normal lh-lg"
-                        >無結束日期</label
-                      >
-                    </form>
-                    <!--end of endDate disabled checkbox -->
+                    </button>
+                    <!-- end of repeat frequency button -->
+                    <!-- repeat frequency modal -->
+                    <div
+                      class="modal fade modal3"
+                      id="frequencyModal"
+                      tabindex="-1"
+                      aria-labelledby="frequencyModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog mx-0">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <p class="text-gray-800 fs-4 fw-bold lh-xs">
+                              重複頻率
+                            </p>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body p-0" data-bs-dismiss="modal">
+                            <div class="frequency-item py-7">
+                              <p class="text-gray-800 fs-6 fw-normal lh-lg">
+                                每週
+                              </p>
+                            </div>
+                            <div class="frequency-item py-7">
+                              <p class="text-gray-800 fs-6 fw-normal lh-lg">
+                                每月
+                              </p>
+                            </div>
+                            <div class="frequency-item py-7">
+                              <p class="text-gray-800 fs-6 fw-normal lh-lg">
+                                每半年
+                              </p>
+                            </div>
+                            <div class="frequency-item py-7">
+                              <p class="text-gray-800 fs-6 fw-normal lh-lg">
+                                每一年
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end of repeat frequency modal -->
                   </div>
-                  <!-- end of repeat payment collapse -->
-                </div>
-                <!--end of repeat payment -->
+                  <!-- repeat frequency -->
 
-                <!-- repayment reminder -->
-                <div class="repayment-reminder mb-4">
-                  <!-- repayment reminder  button -->
+                  <!-- start date -->
                   <div
                     class="d-flex justify-content-between align-items-center mb-4"
                   >
-                    <label for="repayment-reminder-btn" class="w-80"
-                      >自動還款提醒</label
+                    <label
+                      for="startDate"
+                      class="text-gray-800 fs-6 fw-normal lh-lg"
+                      >開始日期</label
                     >
-                    <button
-                      class="p-0"
-                      id="repayment-reminder-btn"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#reminderCollapseExample2"
-                      aria-expanded="false"
-                      aria-controls="reminderCollapseExample2"
-                    >
-                      <div class="handle2"></div>
+                    <button type="button" id="startDate">
+                      <p class="fs-6 fw-normal lh-lg">2024/07/21</p>
+                      <img
+                        src="/fuji_app/assets/icon-arrow-down-822f6488.svg"
+                        alt="icon-arrow-down"
+                      />
                     </button>
                   </div>
-                  <!-- end of repayment reminder  button -->
+                  <!-- end of start date -->
 
-                  <!-- repayment reminder  collapse -->
-                  <div class="collapse" id="reminderCollapseExample2">
-                    <!--repeat frequency2 -->
-                    <div
-                      class="repeat-frequency2-btn d-flex justify-content-between align-items-center mb-4"
+                  <!-- end date -->
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-4"
+                  >
+                    <label
+                      for="endDate"
+                      class="text-gray-800 fs-6 fw-normal lh-lg"
+                      >結束日期</label
                     >
-                      <label
-                        for="frequency2"
-                        class="text-gray-800 fs-6 fw-normal lh-lg"
-                        >重複頻率</label
+                    <button type="button" id="endDate">
+                      <p class="fs-6 fw-normal lh-lg">無</p>
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                      <!-- repeat frequency2 button -->
-                      <button
-                        type="button"
-                        class="d-flex justify-content-between align-items-center"
-                        data-bs-toggle="modal"
-                        data-bs-target="#frequency2Modal"
-                        id="frequency2"
-                      >
-                        <p class="frequency2-select-name fs-6 fw-normal lh-lg">
-                          每週
-                        </p>
-                        <img
-                          src="/fuji_app/assets/icon-arrow-down-822f6488.svg"
-                          alt="icon-arrow-down"
+                        <path
+                          d="M3.72456 6.64155C3.94645 6.41967 4.29367 6.39949 4.53835 6.58104L4.60845 6.64155L9.99984 12.0327L15.3912 6.64155C15.6131 6.41967 15.9603 6.39949 16.205 6.58104L16.2751 6.64155C16.497 6.86344 16.5172 7.21066 16.3356 7.45534L16.2751 7.52544L10.4418 13.3588C10.2199 13.5807 9.87267 13.6008 9.62799 13.4193L9.5579 13.3588L3.72456 7.52544C3.48048 7.28136 3.48048 6.88563 3.72456 6.64155Z"
+                          fill="#98A2B3"
                         />
-                      </button>
-                      <!-- end of repeat frequency2 button -->
-                      <!-- repeat frequency2 modal -->
-                      <div
-                        class="modal fade modal3"
-                        id="frequency2Modal"
-                        tabindex="-1"
-                        aria-labelledby="frequency2ModalLabel"
-                        aria-hidden="true"
-                      >
-                        <div class="modal-dialog mx-0">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <p class="text-gray-800 fs-4 fw-bold lh-xs">
-                                重複頻率
+                      </svg>
+                    </button>
+                  </div>
+                  <!-- end of end date -->
+
+                  <!-- endDate disabled checkbox -->
+                  <form class="endDate-disabled-checkbox">
+                    <input
+                      type="checkbox"
+                      id="endDate-disabled-btn"
+                      autocomplete="off"
+                    />
+                    <label
+                      for="endDate-disabled-btn"
+                      class="text-gray-800 fs-7 fw-normal lh-lg"
+                      >無結束日期</label
+                    >
+                  </form>
+                  <!--end of endDate disabled checkbox -->
+                </div>
+                <!-- end of repeat payment collapse -->
+              </div>
+              <!--end of repeat payment -->
+
+              <!-- repayment reminder -->
+              <div class="repayment-reminder mb-4">
+                <!-- repayment reminder  button -->
+                <div
+                  class="d-flex justify-content-between align-items-center mb-4"
+                >
+                  <label for="repayment-reminder-btn" class="w-80"
+                    >自動還款提醒</label
+                  >
+                  <button
+                    class="p-0"
+                    id="repayment-reminder-btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#reminderCollapseExample2"
+                    aria-expanded="false"
+                    aria-controls="reminderCollapseExample2"
+                  >
+                    <div class="handle2"></div>
+                  </button>
+                </div>
+                <!-- end of repayment reminder  button -->
+
+                <!-- repayment reminder  collapse -->
+                <div class="collapse" id="reminderCollapseExample2">
+                  <!--repeat frequency2 -->
+                  <div
+                    class="repeat-frequency2-btn d-flex justify-content-between align-items-center mb-4"
+                  >
+                    <label
+                      for="frequency2"
+                      class="text-gray-800 fs-6 fw-normal lh-lg"
+                      >重複頻率</label
+                    >
+                    <!-- repeat frequency2 button -->
+                    <button
+                      type="button"
+                      class="d-flex justify-content-between align-items-center"
+                      data-bs-toggle="modal"
+                      data-bs-target="#frequency2Modal"
+                      id="frequency2"
+                    >
+                      <p class="frequency2-select-name fs-6 fw-normal lh-lg">
+                        每週
+                      </p>
+                      <img
+                        src="/fuji_app/assets/icon-arrow-down-822f6488.svg"
+                        alt="icon-arrow-down"
+                      />
+                    </button>
+                    <!-- end of repeat frequency2 button -->
+                    <!-- repeat frequency2 modal -->
+                    <div
+                      class="modal fade modal3"
+                      id="frequency2Modal"
+                      tabindex="-1"
+                      aria-labelledby="frequency2ModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog mx-0">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <p class="text-gray-800 fs-4 fw-bold lh-xs">
+                              重複頻率
+                            </p>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body p-0" data-bs-dismiss="modal">
+                            <div class="frequency2-item py-7">
+                              <p class="text-gray-800 fs-6 fw-normal lh-lg">
+                                每週
                               </p>
-                              <button
-                                type="button"
-                                class="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"
-                              ></button>
                             </div>
-                            <div class="modal-body p-0" data-bs-dismiss="modal">
-                              <div class="frequency2-item py-7">
-                                <p class="text-gray-800 fs-6 fw-normal lh-lg">
-                                  每週
-                                </p>
-                              </div>
-                              <div class="frequency2-item py-7">
-                                <p class="text-gray-800 fs-6 fw-normal lh-lg">
-                                  每月
-                                </p>
-                              </div>
-                              <div class="frequency2-item py-7">
-                                <p class="text-gray-800 fs-6 fw-normal lh-lg">
-                                  每半年
-                                </p>
-                              </div>
-                              <div class="frequency2-item py-7">
-                                <p class="text-gray-800 fs-6 fw-normal lh-lg">
-                                  每一年
-                                </p>
-                              </div>
+                            <div class="frequency2-item py-7">
+                              <p class="text-gray-800 fs-6 fw-normal lh-lg">
+                                每月
+                              </p>
+                            </div>
+                            <div class="frequency2-item py-7">
+                              <p class="text-gray-800 fs-6 fw-normal lh-lg">
+                                每半年
+                              </p>
+                            </div>
+                            <div class="frequency2-item py-7">
+                              <p class="text-gray-800 fs-6 fw-normal lh-lg">
+                                每一年
+                              </p>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <!-- end of repeat frequency2 modal -->
                     </div>
-                    <!-- end of repeat frequency2 -->
+                    <!-- end of repeat frequency2 modal -->
+                  </div>
+                  <!-- end of repeat frequency2 -->
 
-                    <!-- character -->
-                    <div
-                      class="character-btn d-flex justify-content-between align-items-center mb-4"
+                  <!-- character -->
+                  <div
+                    class="character-btn d-flex justify-content-between align-items-center mb-4"
+                  >
+                    <label
+                      for="character"
+                      class="text-gray-800 fs-6 fw-normal lh-lg"
+                      >心情人物</label
                     >
-                      <label
-                        for="character"
-                        class="text-gray-800 fs-6 fw-normal lh-lg"
-                        >心情人物</label
-                      >
-                      <!-- character button -->
-                      <button
-                        type="button"
-                        class="d-flex justify-content-between align-items-center"
-                        data-bs-toggle="modal"
-                        data-bs-target="#characterModal"
-                        id="character"
-                      >
-                        <p class="character-select-name fs-6 fw-normal lh-lg">
-                          請選擇
-                        </p>
-                        <img
-                          src="/fuji_app/assets/icon-arrow-down-822f6488.svg"
-                          alt="icon-arrow-down"
-                        />
-                      </button>
-                      <!-- end of character button -->
-                      <!-- character modal -->
-                      <div
-                        class="modal fade modal3"
-                        id="characterModal"
-                        tabindex="-1"
-                        aria-labelledby="characterModalLabel"
-                        aria-hidden="true"
-                      >
-                        <div class="modal-dialog mx-0 modal-dialog-scrollable">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <p class="text-gray-800 fs-4 fw-bold lh-xs">
-                                心情人物
+                    <!-- character button -->
+                    <button
+                      type="button"
+                      class="d-flex justify-content-between align-items-center"
+                      data-bs-toggle="modal"
+                      data-bs-target="#characterModal"
+                      id="character"
+                    >
+                      <p class="character-select-name fs-6 fw-normal lh-lg">
+                        請選擇
+                      </p>
+                      <img
+                        src="/fuji_app/assets/icon-arrow-down-822f6488.svg"
+                        alt="icon-arrow-down"
+                      />
+                    </button>
+                    <!-- end of character button -->
+                    <!-- character modal -->
+                    <div
+                      class="modal fade modal3"
+                      id="characterModal"
+                      tabindex="-1"
+                      aria-labelledby="characterModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog mx-0 modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <p class="text-gray-800 fs-4 fw-bold lh-xs">
+                              心情人物
+                            </p>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body p-0" data-bs-dismiss="modal">
+                            <div
+                              class="character-item d-flex justify-content-between align-items-center"
+                            >
+                              <p class="text-black fs-5 fw-bold lh-lg">
+                                饒舌歌手
                               </p>
-                              <button
-                                type="button"
-                                class="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"
-                              ></button>
+                              <img
+                                src="/fuji_app/assets/people-1-d7d86c4c.svg"
+                                alt="people-1"
+                              />
                             </div>
-                            <div class="modal-body p-0" data-bs-dismiss="modal">
-                              <div
-                                class="character-item d-flex justify-content-between align-items-center"
-                              >
-                                <p class="text-black fs-5 fw-bold lh-lg">
-                                  饒舌歌手
-                                </p>
-                                <img
-                                  src="/fuji_app/assets/people-1-d7d86c4c.svg"
-                                  alt="people-1"
-                                />
-                              </div>
-                              <div
-                                class="character-item d-flex justify-content-between align-items-center"
-                              >
-                                <p class="text-black fs-5 fw-bold lh-lg">
-                                  鄰居阿姨
-                                </p>
-                                <img
-                                  src="/fuji_app/assets/people-2-e1b89414.svg"
-                                  alt="people-2"
-                                />
-                              </div>
-                              <div
-                                class="character-item d-flex justify-content-between align-items-center"
-                              >
-                                <p class="text-black fs-5 fw-bold lh-lg">
-                                  算命師
-                                </p>
-                                <img
-                                  src="/fuji_app/assets/people-3-2a93e807.svg"
-                                  alt="people-3"
-                                />
-                              </div>
-                              <div
-                                class="character-item d-flex justify-content-between align-items-center"
-                              >
-                                <p class="text-black fs-5 fw-bold lh-lg">
-                                  英文老師
-                                </p>
-                                <img
-                                  src="/fuji_app/assets/people-4-4917c790.svg"
-                                  alt="people-4"
-                                />
-                              </div>
-                              <div
-                                class="character-item d-flex justify-content-between align-items-center"
-                              >
-                                <p class="text-black fs-5 fw-bold lh-lg">
-                                  八點檔演員
-                                </p>
-                                <img
-                                  src="/fuji_app/assets/people-5-0da06513.svg"
-                                  alt="people-5"
-                                />
-                              </div>
-                              <div
-                                class="character-item d-flex justify-content-between align-items-center"
-                              >
-                                <p class="text-black fs-5 fw-bold lh-lg">
-                                  超商店員
-                                </p>
-                                <img
-                                  src="/fuji_app/assets/people-6-89892aca.svg"
-                                  alt="people-6"
-                                />
-                              </div>
+                            <div
+                              class="character-item d-flex justify-content-between align-items-center"
+                            >
+                              <p class="text-black fs-5 fw-bold lh-lg">
+                                鄰居阿姨
+                              </p>
+                              <img
+                                src="/fuji_app/assets/people-2-e1b89414.svg"
+                                alt="people-2"
+                              />
+                            </div>
+                            <div
+                              class="character-item d-flex justify-content-between align-items-center"
+                            >
+                              <p class="text-black fs-5 fw-bold lh-lg">
+                                算命師
+                              </p>
+                              <img
+                                src="/fuji_app/assets/people-3-2a93e807.svg"
+                                alt="people-3"
+                              />
+                            </div>
+                            <div
+                              class="character-item d-flex justify-content-between align-items-center"
+                            >
+                              <p class="text-black fs-5 fw-bold lh-lg">
+                                英文老師
+                              </p>
+                              <img
+                                src="/fuji_app/assets/people-4-4917c790.svg"
+                                alt="people-4"
+                              />
+                            </div>
+                            <div
+                              class="character-item d-flex justify-content-between align-items-center"
+                            >
+                              <p class="text-black fs-5 fw-bold lh-lg">
+                                八點檔演員
+                              </p>
+                              <img
+                                src="/fuji_app/assets/people-5-0da06513.svg"
+                                alt="people-5"
+                              />
+                            </div>
+                            <div
+                              class="character-item d-flex justify-content-between align-items-center"
+                            >
+                              <p class="text-black fs-5 fw-bold lh-lg">
+                                超商店員
+                              </p>
+                              <img
+                                src="/fuji_app/assets/people-6-89892aca.svg"
+                                alt="people-6"
+                              />
                             </div>
                           </div>
                         </div>
                       </div>
-                      <!-- end of character modal -->
                     </div>
-                    <!-- end of character -->
-                    <!-- 留言 -->
-                    <div class="mb-4">
-                      <form>
-                        <label
-                          for="message"
-                          class="fs-6 fw-normal lh-lg text-gray-800 my-2"
-                          >留言文字</label
-                        >
-                        <textarea
-                          class="rounded-2 w-100"
-                          id="message"
-                          rows="2"
-                          placeholder="輸入備註內容"
-                        ></textarea>
-                      </form>
-                    </div>
-                    <!-- end of 留言 -->
-                    <!-- message button -->
-                    <div class="message">
-                      <button
-                        type="button"
-                        class="message-btn"
-                        data-bs-toggle="modal"
-                        data-bs-target="#messageModal"
+                    <!-- end of character modal -->
+                  </div>
+                  <!-- end of character -->
+                  <!-- 留言 -->
+                  <div class="mb-4">
+                    <form>
+                      <label
+                        for="message"
+                        class="fs-6 fw-normal lh-lg text-gray-800 my-2"
+                        >留言文字</label
                       >
-                        <p class="fs-6 fw-bold lh-sm">預覽訊息</p>
-                      </button>
+                      <textarea
+                        class="rounded-2 w-100"
+                        id="message"
+                        rows="2"
+                        placeholder="輸入備註內容"
+                      ></textarea>
+                    </form>
+                  </div>
+                  <!-- end of 留言 -->
+                  <!-- message button -->
+                  <div class="message">
+                    <button
+                      type="button"
+                      class="message-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#messageModal"
+                    >
+                      <p class="fs-6 fw-bold lh-sm">預覽訊息</p>
+                    </button>
 
-                      <!-- message Modal -->
-                      <div
-                        class="modal fade modal3"
-                        id="messageModal"
-                        tabindex="-1"
-                        aria-labelledby="messageModalLabel"
-                        aria-hidden="true"
-                      >
-                        <div class="modal-dialog mx-0">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <button
-                                type="button"
-                                class="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"
-                              ></button>
+                    <!-- message Modal -->
+                    <div
+                      class="modal fade modal3"
+                      id="messageModal"
+                      tabindex="-1"
+                      aria-labelledby="messageModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog mx-0">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body p-0">
+                            <div class="d-flex justify-content-center py-4">
+                              <img
+                                src="/fuji_app/assets/people-1-lg-0620f17c.svg"
+                                alt="people-1-lg"
+                                class="message-image"
+                              />
                             </div>
-                            <div class="modal-body p-0">
-                              <div class="d-flex justify-content-center py-4">
-                                <img
-                                  src="/fuji_app/assets/people-1-lg-0620f17c.svg"
-                                  alt="people-1-lg"
-                                  class="message-image"
-                                />
-                              </div>
-                              <div
-                                class="d-flex align-items-center mb-4 text-nowrap"
+                            <div
+                              class="d-flex align-items-center mb-4 text-nowrap"
+                            >
+                              <img
+                                src="/fuji_app/assets/icon-rabbit-072ca10f.svg"
+                                alt="icon-rabbit"
+                                class="me-2"
+                              />
+                              <p
+                                class="partner-select-name text-gray-600 fs-4 fw-bold lh-xs me-2"
                               >
-                                <img
-                                  src="/fuji_app/assets/icon-rabbit-072ca10f.svg"
-                                  alt="icon-rabbit"
-                                  class="me-2"
-                                />
-                                <p
-                                  class="partner-select-name text-gray-600 fs-4 fw-bold lh-xs me-2"
-                                >
-                                  Yuki
-                                </p>
-                                <p
-                                  class="text-gray-600 fs-4 fw-bold lh-xs me-2"
-                                >
-                                  還沒收到
-                                </p>
-                                <p
-                                  class="bill-name text-primary-400 fs-4 fw-bold lh-xs"
-                                >
-                                  醫療長照費
-                                </p>
-                              </div>
-                              <div
-                                class="border border-1 border-gray-200 bg-gray-50 rounded-3 p-4 mb-7"
+                                Yuki
+                              </p>
+                              <p class="text-gray-600 fs-4 fw-bold lh-xs me-2">
+                                還沒收到
+                              </p>
+                              <p
+                                class="bill-name text-primary-400 fs-4 fw-bold lh-xs"
                               >
-                                <p
-                                  class="mind-tag fs-8 fw-bold lh-lg px-3 py-1 mb-2 d-inline-block"
-                                >
-                                  感到懊惱 😖
-                                </p>
-                                <p
-                                  class="message-input text-gray-600 fs-6 fw-normal lh-lg"
-                                >
-                                  yoyoyo, 這首歌沒有cash我唱不完
-                                </p>
-                              </div>
-                              <button
-                                type="button"
-                                class="confirm-btn"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"
-                              >
-                                確定
-                              </button>
+                                醫療長照費
+                              </p>
                             </div>
+                            <div
+                              class="border border-1 border-gray-200 bg-gray-50 rounded-3 p-4 mb-7"
+                            >
+                              <p
+                                class="mind-tag fs-8 fw-bold lh-lg px-3 py-1 mb-2 d-inline-block"
+                              >
+                                感到懊惱 😖
+                              </p>
+                              <p
+                                class="message-input text-gray-600 fs-6 fw-normal lh-lg"
+                              >
+                                yoyoyo, 這首歌沒有cash我唱不完
+                              </p>
+                            </div>
+                            <button
+                              type="button"
+                              class="confirm-btn"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              確定
+                            </button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!-- end of repayment reminder collapse -->
                 </div>
-                <!-- end of repayment reminder -->
+                <!-- end of repayment reminder collapse -->
+              </div>
+              <!-- end of repayment reminder -->
 
-                <!-- remark -->
+              <!-- remark -->
+              <div class="container-fluid">
                 <form>
                   <label
                     for="remark"
@@ -1058,8 +1056,10 @@
                     placeholder="輸入備註內容"
                   ></textarea>
                 </form>
-                <!-- end of remark -->
               </div>
+              <!-- end of remark -->
+            </div>
+            <div class="container-fluid">
               <form action="" class="submit">
                 <button
                   type="submit"
